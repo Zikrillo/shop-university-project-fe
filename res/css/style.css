@@ -1,6 +1,104 @@
+@import url('http://fonts.cdnfonts.com/css/proxima-nova-2');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     
+}
+header{
+    margin: 26px 142px 42px 104px;
+}
+.header-small-menu{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.header-small-menu__currency-lang-corner{
+    display: flex;
+    align-items: center;
+}
+.header-small-menu__dropdown_lang{
+    display: flex;
+    align-items: center;
+    margin-right: 13px;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.header-small-menu__dropdown_currency{
+    display: flex;
+    align-items: center;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.header-small-menu__dropdown_lang div{
+    margin-right: 5.6px;
+}
+.header-small-menu__dropdown_currency div{
+    margin-right: 5.6px;
+}
+.header-small-menu__profile{
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.header-small-menu__profile img{
+    margin-right: 7px;
+}
+.header-small-menu_basket{
+    margin: 0 35px 0 35px;
+}
+.header-small-menu__balance{
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-right: 7px;
+
+}
+.header-small-menu__profile-corner{
+    display: flex;
+    align-items: center;
+}
+.header-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+.header-navigation__items{
+    display: flex;
+}
+.header-navigation__item{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+    margin-right: 97px;
+    transition: 600ms;
+}
+.header-navigation__item:hover{
+    color: #40BFFF;
+    cursor: pointer;
+}
+.header-navigation__item:last-child{
+    margin-right: 0;
 }
