@@ -240,7 +240,7 @@ main{
     border: 3px white solid;
 }
 .left-menu__ranger-controller-back {
-    width: 40%;
+    width: 100%;
     height: 4px;
     background-color: #2E90E5;
     border-radius: 6px;
