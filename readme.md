@@ -3,4 +3,4 @@
 ### ссылка на GitHub Pages:
 https://zikrillo.github.io/shop-university-project-fe
 
-### Актуальная версия: eb41ffc
+### Актуальная версия: 5e9f725
