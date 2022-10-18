@@ -17,9 +17,11 @@ header{
     padding-right: 104px;
     padding-top: 26px;
     padding-bottom: 26px;
+    z-index: 1000;
 }
 main{
     margin-top: 200px;
+    display: flex;
 }
 .header-small-menu{
     display: flex;
@@ -132,6 +134,7 @@ main{
     margin-bottom: 50px;
     position: fixed;
     top: 160px;
+    z-index: 1000;
 }
 .tab-items__devider{
     margin-right: 8px;
@@ -147,6 +150,16 @@ main{
 }
 .tab-active{
     color: #33A0FF;
+}
+.left-menu{
+    top: 280px;
+    margin-bottom: 30px;
+    position: sticky;
+    margin-left: 102px;
+    overflow-y: auto;
+    height: 65vh;
+    overflow-x: hidden;
+    width: 270px;
 }
 .left-menu__brand-list-header {
     font-family: 'Poppins', sans-serif;
@@ -189,15 +202,7 @@ main{
     color: #262626;
     opacity: 0.5;
 }
-.left-menu{
-    top: 280px;
-    margin-bottom: 30px;
-    position: fixed;
-    margin-left: 102px;
-    overflow-y: auto;
-    height: 65vh;
-    overflow-x: hidden;
-}
+
 .left-menu__ranger {
     height: 144px;
     width: 270px;
@@ -261,9 +266,9 @@ main{
 }
 .goods-list{
     width: auto;
-    margin-left: 400px;
-    margin-top: 280px;
-    margin-right: 129px;
+    max-width: 800px;
+    margin-top: 70px;
+    margin-left: 31px;
 }
 .goods-list__item-header{
     font-family: 'Poppins';
@@ -295,8 +300,8 @@ main{
     margin-left: 13px;
 }
 .devider{
-    /* #F6F7F8; */
-    background:#d3d3d315; 
+
+    background:#F6F7F8; 
     width: 100%;
     height: 3px;
     border-radius: 2px;
@@ -341,8 +346,14 @@ main{
     font-size: 14px;
     line-height: 17px;
     color: #33A0FF;
-
+    transition: 1s;
+    border: 1px solid  #33a0ff00;
 }
+.goods-list__item-buy-button:hover{
+    border: 1px solid  #33A0FF;
+}
+
+
 .goods-list__item-buy-button img{
     margin-right: 16px;
 }
@@ -362,6 +373,11 @@ main{
     font-size: 14px;
     line-height: 17px;
     color: #33A0FF;
+    border: 1px solid  #33a0ff00;
+    transition: 1s;
+}
+.goods-list__item-to-fav-button:hover{
+    border: 1px solid  #33A0FF;
 }
 .goods-list__item-image{
     border-radius: 5px;
