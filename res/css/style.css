@@ -762,7 +762,7 @@ main{
     cursor: pointer;
     border: 1px solid transparent;
 
-    transition: all 1s;
+    transition: border 1s;
 }
 
 /* .button:hover .button__icon{
@@ -770,8 +770,6 @@ main{
 } */
 
 .button:hover{
-    /* color: black; */
-    background: lightblue;
     border: 1px solid  #33A0FF;
 }
 
@@ -977,10 +975,97 @@ footer{
 .product-description{
     background: #FAFAFB;
     border-radius: 5px;
+    margin-top: 20px;
 }
 
 .product-description__tabs-block{
-    padding: 34px 31px 30px;
+    padding: 0 31px;
     border-bottom: 4px solid #E5E8EA;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.product-description__tab{
+    padding: 34px 0 30px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #262626;
+    position: relative;
+    margin-right: 79px;
+    cursor: pointer;
+    transition: color 1s;
+}
+
+.product-description__tab span{
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #262626;
+
+    opacity: 0.25;
+}
+
+.product-description__tab:last-child{
+    margin-right: 0;
+}
+
+.product-description__tab--active{
+    color: #2E90E5;
+}
+
+.product-description__tab::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 0;
+    background-color: #2E90E5;
+    left: 0;
+    top: 100%;
+    border-radius: 2px;
+    transition: all 1s;
+}
+
+.product-description__tab--active::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 90%;
+    background-color: #2E90E5;
+    left: 0;
+    top: 100%;
+    border-radius: 2px;
+}
+
+.product-description__content{
+    padding: 21px 134px 44px 31px;
+    display: none;
+}
+
+.product-description__content--active{
+    display: block;
+}
+
+.product-description__content p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 180%;
+
+    letter-spacing: 0.5px;
+
+    color: #9098B1;
+}
+
+.product-description__content p:not(:last-child){
+    margin-bottom: 15px;
 }
 
