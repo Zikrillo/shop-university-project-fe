@@ -944,6 +944,8 @@ main{
     font-size: 16px;
     line-height: 19px;
 
+    text-decoration: line-through;
+
     color: #C1C8CE;
 }
 
