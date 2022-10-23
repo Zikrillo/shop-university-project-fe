@@ -348,6 +348,7 @@ main{
     color: #33A0FF;
     transition: 1s;
     border: 1px solid  #33a0ff00;
+    cursor: pointer;
 }
 .goods-list__item-buy-button:hover{
     border: 1px solid  #33A0FF;
@@ -358,6 +359,7 @@ main{
     margin-right: 16px;
 }
 .goods-list__item-to-fav-button{
+    cursor: pointer;
     height: 46px;
     width: 46px;
     background: #33a0ff28;
@@ -917,6 +919,9 @@ main{
     padding: 0 15px 30px;
 }
 
+/* =====FOOTER====== */
+
+
 
 
 /* ============TAB SECTION ============== */
@@ -1017,3 +1022,4 @@ main{
 .product-description__content p:not(:last-child){
     margin-bottom: 15px;
 }
+
