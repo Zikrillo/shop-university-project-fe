@@ -393,3 +393,187 @@ main{
     display: flex;
     flex-direction: row-reverse;
 }
+
+.container {
+    margin: 0 auto;
+    max-width: 1500px;
+}
+
+.product{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.product__container{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 42px;
+}
+
+
+.product__content-part{
+    max-width: 950px;
+    margin-right: 35px;
+}
+
+.product-info{
+    display: flex;
+}
+
+.product__right-part{
+    width: 300px;
+    height: 400px;
+}
+
+.product-info__main-image{
+    width: 375px;
+    height: 271px;
+    object-fit: contain;
+    background-color: #e5e5e5;
+}
+
+.tab-image{
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    background-color: #e5e5e5;
+    border: 2px solid #dddddd;
+    padding: 5px;
+}
+
+.product-info__tab-image-block{
+    margin-top: 135px;
+    display: flex;
+    width: 375px;
+    justify-content: space-between;
+}
+
+.product-info__image-part{
+    margin-right: 35px;
+}
+
+.product-info__name{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #22262A;
+
+    margin: 0;
+    max-width: 450px;
+}
+
+.product-info__reivews-count{
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #C1C8CE;
+}
+
+
+.product-info__rating{
+    display: inline-block;
+    margin-right: 17px;
+}
+
+.rating__star{
+    fill: #C1C8CE;
+    width: 11px;
+    height: 10px;
+}
+
+.rating__star--active{
+    fill: #FFCC00;
+}
+
+.product-info__submit-review{
+    text-decoration: none;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #33A0FF;
+    margin-left: 17px;
+}
+
+.product-info__rating-block{
+    padding: 18px 0;
+    border-bottom: 2px solid #F6F7F8;
+}
+
+.product-info__price-block{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.product-info__new-price{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 180%;
+
+    letter-spacing: 0.5px;
+
+    color: #40BFFF;
+    margin-right: 9px;
+}
+
+.product-info__old-price {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+
+    letter-spacing: 0.5px;
+    text-decoration-line: line-through;
+
+    color: #9098B1;
+    margin-right: 8px;
+}
+.product-info__offer-price {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    /* identical to box height, or 21px */
+
+    letter-spacing: 0.5px;
+
+    /* Primary/Red */
+
+    color: #FB7181;
+}
+
+.product-info__text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #262626;
+}
+
+.product-info__text{
+    display: grid;
+    grid-template-columns: minmax(130px, max-content) minmax(100px, max-content);
+    grid-row-gap: 16px;
+    grid-column-gap: 20px;
+}
+
+.product-info__text-block{
+    padding-bottom: 22px;
+    border-bottom: 2px solid #F6F7F8;
+}
