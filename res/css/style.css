@@ -400,9 +400,14 @@ main{
 
 /* ========PRODUCT====================== */
 
+
+.product-main{
+    display: block;
+}
+
 .container {
     margin: 0 auto;
-    max-width: 1500px;
+    max-width: 1300px;
 }
 
 .product{
@@ -524,14 +529,14 @@ main{
     border-bottom: 2px solid #F6F7F8;
 }
 
-.product-info__price-block{
+.price-block {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 16px 0;
 }
 
-.product-info__new-price{
+.price-block__new-price{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
@@ -544,7 +549,7 @@ main{
     margin-right: 9px;
 }
 
-.product-info__old-price {
+.price-block__old-price {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -557,7 +562,7 @@ main{
     color: #9098B1;
     margin-right: 8px;
 }
-.product-info__offer-price {
+.price-block__offer-price {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
@@ -881,7 +886,7 @@ main{
 
 .card__img{
     background-color: #F6F7F8;
-    width: 283px;
+    width: 100%;
     height: 239px;
     padding: 30px;
     object-fit: contain;
@@ -1023,3 +1028,78 @@ main{
     margin-bottom: 15px;
 }
 
+/* ================== RELATED PRODUCTS ================================================= */
+
+.related{
+    width: 100%;
+    margin-top: 70px;
+}
+
+.related__container{
+    padding-bottom: 88px;
+}
+
+.related__content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.related__title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 52px;
+    color: #22262A;
+    margin-bottom: 83px;
+
+    text-align: center;
+}
+
+.related__card{
+    width: 300px;
+}
+
+.related__card .card__info-block{
+    padding: 0 39px 16px 39px;
+}
+
+.related__card .card__img{
+    margin-bottom: 8px;
+}
+
+.related__card .card__name{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    
+    letter-spacing: 0.5px;
+
+    color: #223263;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.related__card .card__rating{
+    margin-bottom: 6px;
+}
+
+.related__card .card__rating .rating__star{
+    width: 14px;
+    height: 15px;
+}
+
+.related__card .card__rating .rating__star:not(:last-child){
+    margin-right: 13px;
+}
+
+.related__card .price-block__new-price{
+    font-size: 18px;
+}
+
+.related__card .price-block{
+    padding: 0;
+}
