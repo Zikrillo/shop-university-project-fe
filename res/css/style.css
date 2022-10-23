@@ -925,8 +925,54 @@ main{
 }
 
 /* =====FOOTER====== */
+footer{
+    background-color:#BCDDFE;
+    padding: 150px 140px;
+    margin-top: 70px;
+}
+.footer__footer-row {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__footer-row:first-child{
+    margin-bottom: 80px;
+}
+
+.footer__small-data {
+    max-width: 221px;
+}
+.footer__small-data-logo {
+    margin-bottom: 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #22262A;
+}
+.footer__small-data-description {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #22262A;
 
 
+}
+.footer__small-data-description img{
+    margin-right: 40px;
+    margin-top: 23px;
+}
+.footer__small-data-description li{
+    text-decoration: none;
+    list-style: none;
+}
+.footer__small-data-description li a{
+    text-decoration: none;
+    color: #22262A;
+}
 
 
 /* ============TAB SECTION ============== */
