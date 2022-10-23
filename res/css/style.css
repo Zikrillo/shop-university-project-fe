@@ -875,6 +875,31 @@ main{
     margin-bottom: 35px;
 }
 
+.product__aside-dots-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 22px;
+}
+
+.product__aside-dot{
+    width: 32px;
+    height: 3px;
+    background: #F1F3F4;
+    border-radius: 2px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: color 1s;
+}
+
+.product__aside-dot:last-child{
+    margin-right: 0;
+}
+
+.product__aside-dot--active{
+    background: #33A0FF;
+}
+
 .card{
     width: 286px;
     border: 3px solid #F6F7F8;
