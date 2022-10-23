@@ -757,6 +757,17 @@ main{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    cursor: pointer;
+
+    transition: all 0.5s;
+}
+
+.button:hover .button__icon{
+    fill: black;
+}
+.button:hover{
+    color: black;
+    background: lightblue;
 }
 
 .button__icon{
@@ -764,6 +775,7 @@ main{
     height: 17px;
     fill: #33A0FF;
     margin-right: 15px;
+    transition: all 0.5s;
 }
 
 .product-info__add-to-cart-btn{
@@ -783,6 +795,10 @@ main{
     width: 50px;
     justify-content: center;
     padding: 0;
+}
+
+.product-info__like-btn:hover .button__icon{
+    fill: red;
 }
 
 .product-info__like-btn .button__icon {
