@@ -1,809 +1,794 @@
-@import url('http://fonts.cdnfonts.com/css/proxima-nova-2');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    
+@import url("http://fonts.cdnfonts.com/css/proxima-nova-2");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-header{
-    margin: 0 0 42px;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    background-color: white;
-    width: 100vw;
-    padding-left: 142px;
-    padding-right: 104px;
-    padding-top: 26px;
-    padding-bottom: 26px;
-    z-index: 1000;
+header {
+  margin: 0 0 42px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: white;
+  width: 100vw;
+  padding-left: 142px;
+  padding-right: 104px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  z-index: 1000;
 }
-main{
-    margin-top: 200px;
-    display: flex;
+main {
+  margin-top: 200px;
+  display: flex;
 }
-.header-small-menu{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
+.header-small-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
-.header-small-menu__currency-lang-corner{
-    display: flex;
-    align-items: center;
+.header-small-menu__currency-lang-corner {
+  display: flex;
+  align-items: center;
 }
-.header-small-menu__dropdown_lang{
-    display: flex;
-    align-items: center;
-    margin-right: 13px;
-    font-family: 'Proxima Nova', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-
+.header-small-menu__dropdown_lang {
+  display: flex;
+  align-items: center;
+  margin-right: 13px;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
 }
-.header-small-menu__dropdown_currency{
-    display: flex;
-    align-items: center;
-    font-family: 'Proxima Nova', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
+.header-small-menu__dropdown_currency {
+  display: flex;
+  align-items: center;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
 }
-.header-small-menu__dropdown_lang div{
-    margin-right: 5.6px;
+.header-small-menu__dropdown_lang div {
+  margin-right: 5.6px;
 }
-.header-small-menu__dropdown_currency div{
-    margin-right: 5.6px;
+.header-small-menu__dropdown_currency div {
+  margin-right: 5.6px;
 }
-.header-small-menu__profile{
-    font-family: 'Proxima Nova', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-    display: flex;
-    align-items: center;
+.header-small-menu__profile {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  display: flex;
+  align-items: center;
 }
-.header-small-menu__profile img{
-    margin-right: 7px;
+.header-small-menu__profile img {
+  margin-right: 7px;
 }
-.header-small-menu_basket{
-    margin: 0 35px 0 35px;
+.header-small-menu_basket {
+  margin: 0 35px 0 35px;
 }
-.header-small-menu__balance{
-    font-family: 'Proxima Nova', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-right: 7px;
-    color: #262626;
-    opacity: 0.5;
-
+.header-small-menu__balance {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-right: 7px;
+  color: #262626;
+  opacity: 0.5;
 }
-.header-small-menu__profile-corner{
-    display: flex;
-    align-items: center;
+.header-small-menu__profile-corner {
+  display: flex;
+  align-items: center;
 }
-.header-navigation{
-    display: flex;
-    justify-content: space-between;
-    align-items: center ;
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.header-navigation__items{
-    display: flex;
+.header-navigation__items {
+  display: flex;
 }
-.header-navigation__item{
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 36px;
-    letter-spacing: 0em;
-    text-align: left;
-    text-transform: uppercase;
-    margin-right: 97px;
-    transition: 600ms;
+.header-navigation__item {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+  margin-right: 97px;
+  transition: 600ms;
 }
-.header-navigation__item:hover{
-    color: #40BFFF;
-    cursor: pointer;
+.header-navigation__item:hover {
+  color: #40bfff;
+  cursor: pointer;
 }
-.header-navigation__item:last-child{
-    margin-right: 0;
+.header-navigation__item:last-child {
+  margin-right: 0;
 }
-.tab-items{
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-    font-family: Proxima Nova;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-    background: #F6F7F8;
-    padding: 14px 0px 14px 0px;
-    align-items: center;
-    margin-bottom: 50px;
-    position: fixed;
-    top: 160px;
-    z-index: 1000;
+.tab-items {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  font-family: Proxima Nova;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  background: #f6f7f8;
+  padding: 14px 0px 14px 0px;
+  align-items: center;
+  margin-bottom: 50px;
+  position: fixed;
+  top: 160px;
+  z-index: 1000;
 }
-.tab-items__devider{
-    margin-right: 8px;
-    margin-left: 8px;
-    font-family: Proxima Nova;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #C1C8CE;
-
+.tab-items__devider {
+  margin-right: 8px;
+  margin-left: 8px;
+  font-family: Proxima Nova;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #c1c8ce;
 }
-.tab-active{
-    color: #33A0FF;
+.tab-active {
+  color: #33a0ff;
 }
-.left-menu{
-    top: 280px;
-    margin-bottom: 30px;
-    position: sticky;
-    margin-left: 102px;
-    overflow-y: auto;
-    height: 65vh;
-    overflow-x: hidden;
-    width: 270px;
+.left-menu {
+  top: 280px;
+  margin-bottom: 30px;
+  position: sticky;
+  margin-left: 102px;
+  overflow-y: auto;
+  height: 65vh;
+  overflow-x: hidden;
+  width: 270px;
 }
 .left-menu__brand-list-header {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 27px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-bottom: 25px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 25px;
 }
 .left-menu__brand-item {
-    font-family: 'Proxima Nova', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-    
-
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
 }
-.left-menu__brand-list{
-    height: 371px;
-    width: 270px;
-    border-radius: 0px;
-    background: #F6F7F8;
-    padding: 19px 20px 26px;
-    border-radius: 6px;
+.left-menu__brand-list {
+  height: 371px;
+  width: 270px;
+  border-radius: 0px;
+  background: #f6f7f8;
+  padding: 19px 20px 26px;
+  border-radius: 6px;
 }
 .left-menu__brand-list-items {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: calc(100% - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 50px);
 }
-.left-menu__brand-item{
-    display: flex;
-    justify-content: space-between;
+.left-menu__brand-item {
+  display: flex;
+  justify-content: space-between;
 }
-.left-menu__brand-count{
-    color: #262626;
-    opacity: 0.5;
+.left-menu__brand-count {
+  color: #262626;
+  opacity: 0.5;
 }
 
 .left-menu__ranger {
-    height: 144px;
-    width: 270px;
-    border-radius: 0px;
-    background: #F6F7F8;
-    border-radius: 6px;
-    padding: 19px 14px 28px 20px;
-    margin-top: 20px;
+  height: 144px;
+  width: 270px;
+  border-radius: 0px;
+  background: #f6f7f8;
+  border-radius: 6px;
+  padding: 19px 14px 28px 20px;
+  margin-top: 20px;
 }
 .left-menu__ranger-header {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 27px;
-    letter-spacing: 0em;
-    text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.left-menu__ranger-controller {
+  position: relative;
+}
+.left-menu__ranger-controller input {
+  width: 100%;
+  position: absolute;
+  background: none;
+  border: none;
+  -webkit-appearance: none;
+  pointer-events: none;
+  top: 7px;
+  z-index: 3;
+}
 
-}
-.left-menu__ranger-controller{
-    position: relative;
-}
-.left-menu__ranger-controller input{
-    width: 100%;
-    position: absolute;
-    background: none;
-    border: none;
-    -webkit-appearance: none;
-    pointer-events: none;
-    top: 7px;
-    z-index: 3;
-}
-
-.left-menu__ranger-controller input::-webkit-slider-thumb{
-    pointer-events: all;
-    -webkit-appearance: none;
-    border: none;
-    background-color: #2E90E5;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    box-sizing: content-box;
-    border: 3px white solid;
+.left-menu__ranger-controller input::-webkit-slider-thumb {
+  pointer-events: all;
+  -webkit-appearance: none;
+  border: none;
+  background-color: #2e90e5;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-sizing: content-box;
+  border: 3px white solid;
 }
 .left-menu__ranger-controller-back {
-    width: 100%;
-    height: 4px;
-    background-color: #2E90E5;
-    border-radius: 6px;
-    position: absolute;
-    top: 13px;
-    z-index: 2;
+  width: 100%;
+  height: 4px;
+  background-color: #2e90e5;
+  border-radius: 6px;
+  position: absolute;
+  top: 13px;
+  z-index: 2;
 }
 .left-menu__ranger-controller-border {
-    width: 100%;
-    height: 4px;
-    background-color: #e1e2e3;
-    border-radius: 6px;
-    position: absolute;
-    top: 13px;
-    z-index: 1;
+  width: 100%;
+  height: 4px;
+  background-color: #e1e2e3;
+  border-radius: 6px;
+  position: absolute;
+  top: 13px;
+  z-index: 1;
 }
-.goods-list{
-    width: auto;
-    max-width: 800px;
-    margin-top: 70px;
-    margin-left: 31px;
+.goods-list {
+  width: auto;
+  max-width: 800px;
+  margin-top: 70px;
+  margin-left: 31px;
 }
-.goods-list__item-header{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
-    color: #22262A;
+.goods-list__item-header {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #22262a;
 }
-.goods-list__reveiw{
-    font-family: 'Proxima Nova', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #C1C8CE;
-    margin-left: 16px;
-
+.goods-list__reveiw {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #c1c8ce;
+  margin-left: 16px;
 }
-.goods-list__reveiw_submit{
-    font-family: 'Proxima Nova', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #33A0FF;
-    margin-left: 13px;
+.goods-list__reveiw_submit {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #33a0ff;
+  margin-left: 13px;
 }
-.devider{
-
-    background:#F6F7F8; 
-    width: 100%;
-    height: 3px;
-    border-radius: 2px;
-    margin-top: 17px;
-    margin-bottom: 15px;
+.devider {
+  background: #f6f7f8;
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  margin-top: 17px;
+  margin-bottom: 15px;
 }
-.goods-list__item-price{
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 180%;
-    letter-spacing: 0.5px;
-    color: #40BFFF;
+.goods-list__item-price {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 180%;
+  letter-spacing: 0.5px;
+  color: #40bfff;
 }
 
-.goods-list__item-description-text{
-    margin-top: 15px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    color: #262626;
+.goods-list__item-description-text {
+  margin-top: 15px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #262626;
 }
-.goods-list__item-buy{
-    margin-top: 25px;
-    display: flex;
+.goods-list__item-buy {
+  margin-top: 25px;
+  display: flex;
 }
-.goods-list__item-buy-button{
-    height: 46px;
-    width: 150px;
-    background: #33a0ff28;
-    border: none;
-    border-radius: 3px;
-    display: flex;
-    align-items: center;    
-    justify-content: center;
-    font-family: 'Proxima Nova';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #33A0FF;
-    transition: 1s;
-    border: 1px solid  #33a0ff00;
-    cursor: pointer;
+.goods-list__item-buy-button {
+  height: 46px;
+  width: 150px;
+  background: #33a0ff28;
+  border: none;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #33a0ff;
+  transition: 1s;
+  border: 1px solid #33a0ff00;
+  cursor: pointer;
 }
-.goods-list__item-buy-button:hover{
-    border: 1px solid  #33A0FF;
-}
-
-
-.goods-list__item-buy-button img{
-    margin-right: 16px;
-}
-.goods-list__item-to-fav-button{
-    cursor: pointer;
-    height: 46px;
-    width: 46px;
-    background: #33a0ff28;
-    border: none;
-    border-radius: 3px;
-    display: flex;
-    align-items: center;    
-    justify-content: center;
-    margin-left: 16px;
-    font-family: 'Proxima Nova';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #33A0FF;
-    border: 1px solid  #33a0ff00;
-    transition: 1s;
-}
-.goods-list__item-to-fav-button:hover{
-    border: 1px solid  #33A0FF;
-}
-.goods-list__item-image{
-    border-radius: 5px;
-    background: #f6f7f800;
-    width: 300px;
-    height: 270px;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    margin-right: 16px;
-}
-.goods-list__item{
-    display: flex;
-    flex-direction: row-reverse;
+.goods-list__item-buy-button:hover {
+  border: 1px solid #33a0ff;
 }
 
-
+.goods-list__item-buy-button img {
+  margin-right: 16px;
+}
+.goods-list__item-to-fav-button {
+  cursor: pointer;
+  height: 46px;
+  width: 46px;
+  background: #33a0ff28;
+  border: none;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 16px;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #33a0ff;
+  border: 1px solid #33a0ff00;
+  transition: 1s;
+}
+.goods-list__item-to-fav-button:hover {
+  border: 1px solid #33a0ff;
+}
+.goods-list__item-image {
+  border-radius: 5px;
+  background: #f6f7f800;
+  width: 300px;
+  height: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+}
+.goods-list__item {
+  display: flex;
+  flex-direction: row-reverse;
+}
 
 /* ========PRODUCT====================== */
 
-
-.product-main{
-    display: block;
+.product-main {
+  display: block;
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 1300px;
+  margin: 0 auto;
+  max-width: 1300px;
 }
 
-.product{
-    width: 100%;
-    margin-top: 10px;
+.product {
+  width: 100%;
+  margin-top: 10px;
 }
 
-.product__container{
-    display: flex;
-    align-items: flex-start;
-    padding-top: 42px;
+.product__container {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 42px;
 }
 
-
-.product__content-part{
-    max-width: 950px;
-    margin-right: 35px;
+.product__content-part {
+  max-width: 950px;
+  margin-right: 35px;
 }
 
-.product-info{
-    display: flex;
+.product-info {
+  display: flex;
 }
 
-.product-info__main-image{
-    width: 375px;
-    height: 271px;
-    padding: 30px;
-    object-fit: contain;
-    background-color: #e5e5e5;
+.product-info__main-image {
+  width: 375px;
+  height: 271px;
+  padding: 30px;
+  object-fit: contain;
+  background-color: #e5e5e5;
 }
 
-.tab-image{
-    width: 85px;
-    height: 85px;
-    object-fit: contain;
-    background-color: #e5e5e5;
-    border: 2px solid #dddddd;
-    padding: 5px;
-    cursor: pointer;
+.tab-image {
+  width: 85px;
+  height: 85px;
+  object-fit: contain;
+  background-color: #e5e5e5;
+  border: 2px solid #dddddd;
+  padding: 5px;
+  cursor: pointer;
 }
 
-.product-info__tab-image-block{
-    margin-top: 135px;
-    display: flex;
-    width: 375px;
-    justify-content: space-between;
+.product-info__tab-image-block {
+  margin-top: 135px;
+  display: flex;
+  width: 375px;
+  justify-content: space-between;
 }
 
-.product-info__image-part{
-    margin-right: 35px;
+.product-info__image-part {
+  margin-right: 35px;
 }
 
-.product-info__text-part{
-    min-width: 500px;
+.product-info__text-part {
+  min-width: 500px;
 }
 
-.product-info__name{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
+.product-info__name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
 
-    color: #22262A;
+  color: #22262a;
 
-    margin: 0;
-    max-width: 450px;
+  margin: 0;
+  max-width: 450px;
 }
 
-.product-info__reivews-count{
-    font-family: 'Proxima Nova';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+.product-info__reivews-count {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 
-    color: #C1C8CE;
+  color: #c1c8ce;
 }
 
-
-.product-info__rating{
-    display: inline-block;
-    margin-right: 17px;
+.product-info__rating {
+  display: inline-block;
+  margin-right: 17px;
 }
 
-.rating__star{
-    fill: #C1C8CE;
-    width: 11px;
-    height: 10px;
+.rating__star {
+  fill: #c1c8ce;
+  width: 11px;
+  height: 10px;
 }
 
-.rating__star--active{
-    fill: #FFCC00;
+.rating__star--active {
+  fill: #ffcc00;
 }
 
-.product-info__submit-review{
-    text-decoration: none;
-    font-family: 'Proxima Nova';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+.product-info__submit-review {
+  text-decoration: none;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 
-    color: #33A0FF;
-    margin-left: 17px;
+  color: #33a0ff;
+  margin-left: 17px;
 }
 
-.product-info__reviews-count{
-    font-family: 'Proxima Nova';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+.product-info__reviews-count {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 
-    color: #C1C8CE;
+  color: #c1c8ce;
 }
 
-.product-info__rating-block{
-    padding: 18px 0;
-    border-bottom: 2px solid #F6F7F8;
+.product-info__rating-block {
+  padding: 18px 0;
+  border-bottom: 2px solid #f6f7f8;
 }
 
 .price-block {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 16px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px 0;
 }
 
-.price-block__new-price{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 180%;
+.price-block__new-price {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 180%;
 
-    letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
 
-    color: #40BFFF;
-    margin-right: 9px;
+  color: #40bfff;
+  margin-right: 9px;
 }
 
 .price-block__old-price {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
 
-    letter-spacing: 0.5px;
-    text-decoration-line: line-through;
+  letter-spacing: 0.5px;
+  text-decoration-line: line-through;
 
-    color: #9098B1;
-    margin-right: 8px;
+  color: #9098b1;
+  margin-right: 8px;
 }
 .price-block__offer-price {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 150%;
-    /* identical to box height, or 21px */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  /* identical to box height, or 21px */
 
-    letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
 
-    /* Primary/Red */
+  /* Primary/Red */
 
-    color: #FB7181;
+  color: #fb7181;
 }
 
 .product-info__text {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
 
-    color: #262626;
+  color: #262626;
 }
 
-.product-info__text{
-    display: grid;
-    grid-template-columns: 130px 1fr;
-    grid-row-gap: 16px;
-    grid-column-gap: 20px;
+.product-info__text {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  grid-row-gap: 16px;
+  grid-column-gap: 20px;
 }
 
-.product-info__text-block{
-    padding-bottom: 22px;
-    border-bottom: 2px solid #F6F7F8;
+.product-info__text-block {
+  padding-bottom: 22px;
+  border-bottom: 2px solid #f6f7f8;
 }
 
-.product-info__color-item{
-    width: 17px;
-    height: 17px;
-    border-radius: 50%;
+.product-info__color-item {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
 
-    outline: none;
-    border: none;
-    margin: 0;
-    padding: 0;
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 0;
 
-    outline-offset: 2px;
-    outline-width: 2px;
+  outline-offset: 2px;
+  outline-width: 2px;
 
-    outline: rgba(0, 0, 255, 0.5) solid;
-    outline-color: rgba(0, 255, 0, 0.5);
+  outline: rgba(0, 0, 255, 0.5) solid;
+  outline-color: rgba(0, 255, 0, 0.5);
 
-    margin-right: 15px;
-    cursor: pointer;
+  margin-right: 15px;
+  cursor: pointer;
 }
 
 .product-info__colors {
-    display: flex;
-    justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.product-info__param-text{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+.product-info__param-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 
-    color: #262626;
+  color: #262626;
 }
 
-.product-info__params-block{
-    display: grid;
-    grid-template-columns: 130px 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    padding: 23px 0;
+.product-info__params-block {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  padding: 23px 0;
 
-    align-items: center;
+  align-items: center;
 
-    border-bottom: 2px solid #F6F7F8;
+  border-bottom: 2px solid #f6f7f8;
 }
 
-.dropdown{
-    position: relative;
-    display: inline-block;
+.dropdown {
+  position: relative;
+  display: inline-block;
 
-    padding: 10px 15px;
-    border: 2px solid #F1F3F4;
-    font-family: 'Proxima Nova';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+  padding: 10px 15px;
+  border: 2px solid #f1f3f4;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
 
-    color: #22262A;
+  color: #22262a;
 
-    max-width: 121px;
+  max-width: 121px;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.dropdown:hover{
-    background: #F1F3F4;
+.dropdown:hover {
+  background: #f1f3f4;
 }
 
-.dropdown span{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.dropdown span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 121px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 121px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 
-    left: 0;
-    top: 100%;
+  left: 0;
+  top: 100%;
 }
 
-.dropdown-content p{
-    padding: 5px 16px;
-    border-bottom: 2px solid #F1F3F4;
+.dropdown-content p {
+  padding: 5px 16px;
+  border-bottom: 2px solid #f1f3f4;
 }
 
-.dropdown-content p:hover{
-    background: #F1F3F4;
+.dropdown-content p:hover {
+  background: #f1f3f4;
 }
-  
+
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
-.product-info__add-to-cart-block{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.product-info__add-to-cart-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.counter{
-    background: #F6F7F8;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 20px;
-    min-width: 123px;
+.counter {
+  background: #f6f7f8;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  min-width: 123px;
 }
 
-.counter__btn{
-    border: none;
-    background-color: transparent;
-    outline: 0;
-    padding: 0;
-    margin: 0;
-    color: #33A0FF;
+.counter__btn {
+  border: none;
+  background-color: transparent;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  color: #33a0ff;
 
-    font-size: 20px;
+  font-size: 20px;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.counter__btn:hover{
-    color: #262626;
+.counter__btn:hover {
+  color: #262626;
 }
 
-.counter span{
-    font-family: 'Proxima Nova';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+.counter span {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 
-    color: #262626;
+  color: #262626;
 }
 
-.product-info__counter{
-    margin-right: 15px;
+.product-info__counter {
+  margin-right: 15px;
 }
 
-.button{
-    border: none;
-    background-color: transparent;
-    outline: 0;
-    padding: 0;
-    margin: 0;
+.button {
+  border: none;
+  background-color: transparent;
+  outline: 0;
+  padding: 0;
+  margin: 0;
 
-    background: #33A0FF;
-    background-color: rgba(33, 160, 255, 0.1);
+  background: #33a0ff;
+  background-color: rgba(33, 160, 255, 0.1);
 
-    color: #33A0FF;
+  color: #33a0ff;
 
-    border-radius: 5px;
+  border-radius: 5px;
 
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    cursor: pointer;
-    border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  border: 1px solid transparent;
 
-    transition: border 1s;
+  transition: border 1s;
 }
 
 /* .button:hover .button__icon{
     fill: black;
 } */
 
-.button:hover{
-    border: 1px solid  #33A0FF;
+.button:hover {
+  border: 1px solid #33a0ff;
 }
 
-.button__icon{
-    width: 17px;
-    height: 17px;
-    fill: #33A0FF;
-    margin-right: 15px;
-    transition: all 0.5s;
+.button__icon {
+  width: 17px;
+  height: 17px;
+  fill: #33a0ff;
+  margin-right: 15px;
+  transition: all 0.5s;
 }
 
-.product-info__add-to-cart-btn{
-    justify-self: end;
-    min-height: 50px;
-    padding: 14px 15px 17px 20px;
-    margin-left: auto;
-    margin-right: 17px;
+.product-info__add-to-cart-btn {
+  justify-self: end;
+  min-height: 50px;
+  padding: 14px 15px 17px 20px;
+  margin-left: auto;
+  margin-right: 17px;
 }
 
-.block{
-    width: 100%;
+.block {
+  width: 100%;
 }
 
-.product-info__like-btn{
-    height: 50px;
-    width: 50px;
-    justify-content: center;
-    padding: 0;
+.product-info__like-btn {
+  height: 50px;
+  width: 50px;
+  justify-content: center;
+  padding: 0;
 }
 
 /* .product-info__like-btn:hover .button__icon{
@@ -811,374 +796,382 @@ main{
 } */
 
 .product-info__like-btn .button__icon {
-    margin-right: 0;
+  margin-right: 0;
 }
 
-.product-info__add-to-cart-block{
-    padding: 20px 0;
-    border-bottom: 2px solid #F6F7F8;
+.product-info__add-to-cart-block {
+  padding: 20px 0;
+  border-bottom: 2px solid #f6f7f8;
 }
 
-.product-info__share-link{
-    background: #385C8E;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
+.product-info__share-link {
+  background: #385c8e;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 
-    color: #FFFFFF;
+  color: #ffffff;
 
-    text-decoration: none;
+  text-decoration: none;
 
-    padding: 14px 30px 16px 35px;
-    min-height: 49px;
-    max-width: 245px;
+  padding: 14px 30px 16px 35px;
+  min-height: 49px;
+  max-width: 245px;
 }
 
-.product-info__share-link .button__icon{
-    width: 8px;
-    height: 16px;
-    fill: #fff;
+.product-info__share-link .button__icon {
+  width: 8px;
+  height: 16px;
+  fill: #fff;
 }
 
-.product-info__share-block{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
+.product-info__share-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
 }
 
-.product-info__share-link--tw{
-    background: #03A9F4;
+.product-info__share-link--tw {
+  background: #03a9f4;
 }
 
-.product-info__share-link--tw .button__icon{
-    width: 17px;
-    height: 12px;
+.product-info__share-link--tw .button__icon {
+  width: 17px;
+  height: 12px;
 }
-
 
 /* =====ASIDE====== */
 
-.product__aside-part{
-    width: 300px;
+.product__aside-part {
+  width: 300px;
 }
 
-.product__aside-title{
-    font-family: 'Proxima Nova';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
+.product__aside-title {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
 
-    color: #C1C8CE;
-    text-transform: uppercase;
-    margin-bottom: 35px;
+  color: #c1c8ce;
+  text-transform: uppercase;
+  margin-bottom: 35px;
 }
 
-.product__aside-dots-block{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 22px;
+.product__aside-dots-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 22px;
 }
 
-.product__aside-dot{
-    width: 32px;
-    height: 3px;
-    background: #F1F3F4;
-    border-radius: 2px;
-    margin-right: 5px;
-    cursor: pointer;
-    transition: color 1s;
+.product__aside-dot {
+  width: 32px;
+  height: 3px;
+  background: #f1f3f4;
+  border-radius: 2px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: color 1s;
 }
 
-.product__aside-dot:last-child{
-    margin-right: 0;
+.product__aside-dot:last-child {
+  margin-right: 0;
 }
 
-.product__aside-dot--active{
-    background: #33A0FF;
+.product__aside-dot--active {
+  background: #33a0ff;
 }
 
-.card{
-    width: 286px;
-    border: 3px solid #F6F7F8;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
+.card {
+  width: 286px;
+  border: 3px solid #f6f7f8;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
 }
 
-.card__img{
-    background-color: #F6F7F8;
-    width: 100%;
-    height: 239px;
-    padding: 30px;
-    object-fit: contain;
-    margin-bottom: 50px;
+.card__img {
+  background-color: #f6f7f8;
+  width: 100%;
+  height: 239px;
+  padding: 30px;
+  object-fit: contain;
+  margin-bottom: 50px;
 }
 
-.card__rating{
-    margin-bottom: 12px;
-    display: flex;
-    justify-content: center;
+.card__rating {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
 }
 
-.card__new-price{
-    font-family: 'Proxima Nova';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+.card__new-price {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 
-    color: #FF4858;
-    margin-right: 11px;
+  color: #ff4858;
+  margin-right: 11px;
 }
 
-.card__old-price{
-    font-family: 'Proxima Nova';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+.card__old-price {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 
-    text-decoration: line-through;
+  text-decoration: line-through;
 
-    color: #C1C8CE;
+  color: #c1c8ce;
 }
 
-.card__info-block{
-    padding: 0 15px 30px;
+.card__info-block {
+  padding: 0 15px 30px;
 }
 
 /* =====FOOTER====== */
-footer{
-    background-color:#BCDDFE;
-    padding: 150px 140px;
-    margin-top: 70px;
+footer {
+  background-color: #bcddfe;
+  padding: 150px 140px;
+  margin-top: 70px;
 }
 .footer__footer-row {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
-.footer__footer-row:first-child{
-    margin-bottom: 80px;
+.footer__footer-row:first-child {
+  margin-bottom: 80px;
 }
 
 .footer__small-data {
-    max-width: 221px;
+  max-width: 221px;
 }
 .footer__small-data-logo {
-    margin-bottom: 16px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
-    color: #22262A;
+  margin-bottom: 16px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #22262a;
 }
 .footer__small-data-description {
-    font-family: 'Proxima Nova';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
 
-    color: #22262A;
-
-
+  color: #22262a;
 }
-.footer__small-data-description img{
-    margin-right: 40px;
-    margin-top: 23px;
+.footer__small-data-description img {
+  margin-right: 40px;
+  margin-top: 23px;
 }
-.footer__small-data-description li{
-    text-decoration: none;
-    list-style: none;
+.footer__small-data-description li {
+  text-decoration: none;
+  list-style: none;
 }
-.footer__small-data-description li a{
-    text-decoration: none;
-    color: #22262A;
+.footer__small-data-description li a {
+  text-decoration: none;
+  color: #22262a;
 }
-
 
 /* ============TAB SECTION ============== */
 
-.product-description{
-    background: #FAFAFB;
-    border-radius: 5px;
-    margin-top: 20px;
+.product-description {
+  background: #fafafb;
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
-.product-description__tabs-block{
-    padding: 0 31px;
-    border-bottom: 4px solid #E5E8EA;
-    display: flex;
-    justify-content: flex-start;
+.product-description__tabs-block {
+  padding: 0 31px;
+  border-bottom: 4px solid #e5e8ea;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.product-description__tab{
-    padding: 34px 0 30px;
+.product-description__tab {
+  padding: 34px 0 30px;
 
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
 
-    color: #262626;
-    position: relative;
-    margin-right: 79px;
-    cursor: pointer;
-    transition: color 0.6s;
+  color: #262626;
+  position: relative;
+  margin-right: 79px;
+  cursor: pointer;
+  transition: color 0.6s;
 }
 
-.product-description__tab:hover{
-    color: #40BFFF;
+.product-description__tab:hover {
+  color: #40bfff;
 }
 
-.product-description__tab span{
-    font-family: 'Proxima Nova';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+.product-description__tab span {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 
-    color: #262626;
+  color: #262626;
 
-    opacity: 0.25;
+  opacity: 0.25;
 }
 
-.product-description__tab:last-child{
-    margin-right: 0;
+.product-description__tab:last-child {
+  margin-right: 0;
 }
 
-.product-description__tab--active{
-    color: #2E90E5;
+.product-description__tab--active {
+  color: #2e90e5;
 }
 
-.product-description__tab::after{
-    content: "";
-    position: absolute;
-    height: 4px;
-    width: 0;
-    background-color: #2E90E5;
-    left: 0;
-    top: 100%;
-    border-radius: 2px;
-    transition: all 1s;
+.product-description__tab::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 0;
+  background-color: #2e90e5;
+  left: 0;
+  top: 100%;
+  border-radius: 2px;
+  transition: all 1s;
 }
 
-.product-description__tab--active::after{
-    content: "";
-    position: absolute;
-    height: 4px;
-    width: 90%;
-    background-color: #2E90E5;
-    left: 0;
-    top: 100%;
-    border-radius: 2px;
+.product-description__tab--active::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 90%;
+  background-color: #2e90e5;
+  left: 0;
+  top: 100%;
+  border-radius: 2px;
 }
 
-.product-description__content{
-    padding: 21px 134px 44px 31px;
-    display: none;
+.product-description__content {
+  padding: 21px 134px 44px 31px;
+  display: none;
 }
 
-.product-description__content--active{
-    display: block;
+.product-description__content--active {
+  display: block;
 }
 
-.product-description__content p{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 180%;
+.product-description__content p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 180%;
 
-    letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
 
-    color: #9098B1;
+  color: #9098b1;
 }
 
-.product-description__content p:not(:last-child){
-    margin-bottom: 15px;
+.product-description__content p:not(:last-child) {
+  margin-bottom: 15px;
 }
 
 /* ================== RELATED PRODUCTS ================================================= */
 
-.related{
-    width: 100%;
-    margin-top: 70px;
+.related {
+  width: 100%;
+  margin-top: 70px;
 }
 
-.related__container{
-    padding-bottom: 88px;
+.related__container {
+  padding-bottom: 88px;
 }
 
-.related__content{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+.related__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
-.related__title{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 35px;
-    line-height: 52px;
-    color: #22262A;
-    margin-bottom: 83px;
+.related__title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 52px;
+  color: #22262a;
+  margin-bottom: 83px;
 
-    text-align: center;
+  text-align: center;
 }
 
-.related__card{
-    width: 300px;
+.related__card {
+  width: 300px;
 }
 
-.related__card .card__info-block{
-    padding: 0 39px 16px 39px;
+.related__card .card__info-block {
+  padding: 0 39px 16px 39px;
 }
 
-.related__card .card__img{
-    margin-bottom: 8px;
+.related__card .card__img {
+  margin-bottom: 8px;
 }
 
-.related__card .card__name{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 150%;
-    
-    letter-spacing: 0.5px;
+.related__card .card__name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
 
-    color: #223263;
-    margin-bottom: 6px;
-    text-align: center;
+  letter-spacing: 0.5px;
+
+  color: #223263;
+  margin-bottom: 6px;
+  text-align: center;
 }
 
-.related__card .card__rating{
-    margin-bottom: 6px;
+.related__card .card__rating {
+  margin-bottom: 6px;
 }
 
-.related__card .card__rating .rating__star{
-    width: 14px;
-    height: 15px;
+.related__card .card__rating .rating__star {
+  width: 14px;
+  height: 15px;
 }
 
-.related__card .card__rating .rating__star:not(:last-child){
-    margin-right: 13px;
+.related__card .card__rating .rating__star:not(:last-child) {
+  margin-right: 13px;
 }
 
-.related__card .price-block__new-price{
-    font-size: 18px;
+.related__card .price-block__new-price {
+  font-size: 18px;
 }
 
-.related__card .price-block{
-    padding: 0;
+.related__card .price-block {
+  padding: 0;
+}
+.basket
+  .basket__container
+  .basket__item-list
+  .basket__text
+  .basket__products
+  .basket__product
+  .basket__product-img
+  .basket__product-name
+  .basket__product-price
+  .basket__product-qty
+  .basket__product-unit-price {
 }
