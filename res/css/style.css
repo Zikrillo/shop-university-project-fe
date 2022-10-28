@@ -1169,7 +1169,7 @@ footer {
 
 .basket__container {
   max-width: 1256px;
-  margin: 46px auto 0px;
+  margin: 300px auto 0px;
 }
 .basket__head {
   font-weight: 500;
@@ -1405,7 +1405,7 @@ footer {
   line-height: 27px;
   color: #ffffff;
 }
-.no-fix {
+/* .no-fix {
   position: static;
   width: 100%;
 }
@@ -1420,3 +1420,4 @@ footer {
   max-width: 1256px;
   margin: 0px auto;
 }
+ */
