@@ -1163,9 +1163,10 @@ footer {
 .basket {
   font-family: "Poppins";
 }
-.basker__container {
+
+.basket__container {
   max-width: 1256px;
-  margin: 265px auto 0px;
+  margin: 300px auto 0px;
 }
 .basket__head {
   font-weight: 500;
@@ -1206,55 +1207,75 @@ footer {
   background: #f6f7f8;
   position: relative;
 }
-.basket__product-img::before {
-  content: "";
-  position: absolute;
-  transform: translateY(50%);
-  bottom: 50%;
-  left: -55px;
-  border-radius: 50%;
-  background: #ff6875;
-  opacity: 0.05;
-  height: 22px;
-  width: 22px;
-}
-.basket__product-img::after {
-  content: url("../assets/x.svg");
-  position: absolute;
-  bottom: 51%;
-  left: -49px;
-  border-radius: 50%;
-  transform: translateY(50%);
-}
 .basket__product-img img {
   width: 130px;
   height: 90px;
   object-fit: contain;
 }
+.form-x {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 50%;
+  right: 180px;
+  transform: translate(0%, -50%);
+}
+.btn-x {
+  background: url("../assets/x.svg") no-repeat;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 .basket__product-name {
+  flex: 0 1 490px;
   margin-left: 28px;
 }
 .basket__product-price {
-  margin-left: 323px;
+  margin-left: 20px;
 }
 .basket__product-value {
   margin-left: 126px;
   background: #f6f7f8;
   padding: 12px 55px;
-  position: relative;
   border-radius: 7px;
+  position: relative;
 }
-.basket__product-value::before {
-  content: "-";
-  color: #33a0ff;
-  position: absolute;
-  left: 18px;
+.basket__calc-btn {
+  position: relative;
 }
-.basket__product-value::after {
-  content: "+";
-  color: #33a0ff;
+.basket__calc-btn::before {
+  content: "";
+  background: url("../assets/minus.svg") no-repeat;
+  width: 9px;
+  height: 2px;
   position: absolute;
-  right: 18px;
+  left: -30px;
+  bottom: 4px;
+}
+.basket__calc-btn::after {
+  content: "";
+  background: url("../assets/plus.svg") no-repeat;
+  width: 9px;
+  height: 10px;
+  position: absolute;
+  left: 30px;
+  bottom: -1px;
+}
+.basket__value-inp {
+  border: none;
+  width: 22px;
+  background-color: inherit;
+  position: absolute;
+  left: 50%;
+  transform: translate(-12%, 50%);
+  bottom: 50%;
+  font-family: "Proxima Nova";
+  font-size: 18px;
+  line-height: 22px;
+  color: #262626;
+}
+.basket__value-inp:focus {
+  outline: none;
 }
 .basket__product-unit-price {
   margin-left: 74px;
@@ -1367,6 +1388,9 @@ footer {
 }
 .basket__total-value {
 }
+.form-check {
+  width: 100%;
+}
 .basket__total-btn {
   width: 100%;
   height: 60px;
@@ -1378,3 +1402,19 @@ footer {
   line-height: 27px;
   color: #ffffff;
 }
+/* .no-fix {
+  position: static;
+  width: 100%;
+}
+.no-fix2 {
+  position: static;
+  width: 100vw;
+  margin: 0;
+  margin-left: -150px;
+  margin-top: 45px;
+}
+.no-fix--container {
+  max-width: 1256px;
+  margin: 0px auto;
+}
+ */
