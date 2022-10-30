@@ -939,17 +939,14 @@ main {
 
 /* =====FOOTER====== */
 footer {
-  background-color: #bcddfe;
-  padding: 150px 140px;
+  padding: 150px 140px 40px; 
   margin-top: 70px;
 }
 .footer__footer-row {
   display: flex;
   justify-content: space-between;
 }
-.footer__footer-row:first-child {
-  margin-bottom: 80px;
-}
+
 
 .footer__small-data {
   max-width: 221px;

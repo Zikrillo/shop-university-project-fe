@@ -1,451 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="res/css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="res/css/style.css">
 </head>
+
 <body>
-    <header>
-        <div class="header-small-menu">
-            <div class="header-small-menu__currency-lang-corner"> 
-                <div class="header-small-menu__dropdown_lang">
-                    <div>EN</div> 
+  <header>
+    <div class="header-small-menu">
+      <div class="header-small-menu__currency-lang-corner">
+        <div class="header-small-menu__dropdown_lang">
+          <div>EN</div>
+          <img src="res/assets/arrow down.svg" alt="" />
+        </div>
+        <div class="header-small-menu__dropdown_currency">
+          <div>USD</div>
+          <img src="res/assets/arrow down.svg" alt="" />
+        </div>
+      </div>
+      <div class="header-small-menu__profile-corner">
+        <div class="header-small-menu__profile">
+          <img src="res/assets/profile_close_2.svg" alt="" />
+          <div>My profile</div>
+        </div>
+        <div class="header-small-menu_basket">
+          <img src="res/assets/basket.svg" alt="" />
+        </div>
+        <div class="header-small-menu__balance">$0.00</div>
+        <div class="header-small-menu__search">
+          <img src="res/assets/search-icon.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <nav class="header-navigation">
+      <div class="header-navigation__logo">
+        <a href="/"><img src="res/assets/logo.png" alt="" /></a>
+      </div>
+      <div class="header-navigation__items">
+        <div class="header-navigation__item">Home</div>
+        <div class="header-navigation__item">Laptops</div>
+        <div class="header-navigation__item">PC</div>
+        <div class="header-navigation__item">Contact</div>
+      </div>
+    </nav>
+  </header>
+  <nav class="tab-items">
+    <div class="tab-items__tab-item tab-active">Home</div>
+    <div class="tab-items__devider">/</div>
+    <div class="tab-items__tab-item">Hot Deal</div>
+    <div class="tab-items__devider">/</div>
+    <div class="tab-items__tab-item">Nike Airmax 270 React</div>
+  </nav>
+
+  <main class="product-main">
+    <div class="product">
+      <div class="container product__container">
+        <div class="product__content-part">
+          <div class="product-info">
+            <div class="product-info__image-part">
+              <img src="res/assets/comp.png" alt="" class="product-info__main-image" id="main-image">
+              <div class="product-info__tab-image-block">
+                <img src="res/assets/comp.png" alt="" class="tab-image product-info__tab-image">
+                <img src="res/assets/comp.png" alt="" class="tab-image product-info__tab-image">
+                <img src="res/assets/comp.png" alt="" class="tab-image product-info__tab-image">
+                <img src="res/assets/comp.png" alt="" class="tab-image product-info__tab-image">
+              </div>
+            </div>
+
+            <div class="product-info__text-part">
+              <h2 class="product-info__name">PotatoCompucter 3000</h2>
+              <div class="product-info__rating-block block">
+                <div class="rating product-info__rating">
+                  <svg class="rating__star rating__star--active">
+                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                  </svg>
+                  <svg class="rating__star rating__star--active">
+                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                  </svg>
+                  <svg class="rating__star rating__star--active">
+                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                  </svg>
+                  <svg class="rating__star rating__star--active">
+                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                  </svg>
+                  <svg class="rating__star">
+                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                  </svg>
+                </div>
+                <span class="product-info__reviews-count">
+                  <span class="reviews-counter">0</span> reviews
+                </span>
+                <!-- /.product-info__reviews -->
+                <a href="#" class="product-info__submit-review">Submit review</a>
+              </div>
+              <div class="price-block product-info__price-block block">
+                <span class="price-block__new-price ">$299.43</span>
+                <span class="price-block__old-price">$534.33</span>
+                <span class="price-block__offer-price">24% Off</span>
+              </div>
+              <div class="product-info__text-block block">
+                <div class="product-info__text">
+                  <span>Avaibility:</span>
+                  <span class="product-info__text--param">In stock</span>
+                  <span>Category:</span>
+                  <span class="product-info__text--param">Laptops</span>
+                  <span>Free shipping</span>
+                </div>
+              </div>
+              <div class="product-info__params-block block">
+                <span class="product-info__param-text">Select Color: </span>
+                <div class="product-info__colors">
+                  <button class="product-info__color-item"
+                    style="background-color: blue; outline-color: rgba(0, 0, 255, 0.5);"></button>
+                  <button class="product-info__color-item"
+                    style="background-color: yellow; outline-color: rgba(255, 255, 0, 0.5);"></button>
+                  <button class="product-info__color-item"
+                    style="background-color: black; outline-color: rgba(0, 0, 0, 0.5);"></button>
+                  <button class="product-info__color-item"
+                    style="background-color: red; outline-color: rgba(255, 0, 0, 0.5);"></button>
+                </div>
+                <span class="product-info__param-text">Size: </span>
+                <div class="product-info__size dropdown">
+                  <span>16gb
                     <img src="res/assets/arrow down.svg" alt="">
-                </div>
-                <div class="header-small-menu__dropdown_currency"><div>USD</div>
-                <img src="res/assets/arrow down.svg" alt=""></div>
-            </div>
-            <div class="header-small-menu__profile-corner">
-                <div class="header-small-menu__profile">
-                    <img src="res/assets/profile_close_2.svg" alt="">     
-                    <div>My profile</div>
-                </div>
-                <div class="header-small-menu_basket">
-                    <img src="res/assets/basket.svg" alt="">
-                </div>
-                <div class="header-small-menu__balance">
-                    $0.00
-                </div>
-                <div class="header-small-menu__search">
-                    <img src="res/assets/search-icon.svg" alt="">
-                </div>
-            </div>
-
-        </div>
-        <nav class="header-navigation">
-            <div class="header-navigation__logo">
-                <img src="res/assets/logo.png" alt="">
-            </div>
-            <div class="header-navigation__items">
-                <div class="header-navigation__item">Home</div>
-                <div class="header-navigation__item">Laptops</div>
-                <div class="header-navigation__item">PC</div>
-                <div class="header-navigation__item">Contact</div>
-            </div>
-        </nav>
-        
-    </header>
-    <nav class="tab-items">
-        <div class="tab-items__tab-item tab-active">Home</div>
-        <div class="tab-items__devider">/</div>
-        <div class="tab-items__tab-item">Hot Deal</div>
-        <div class="tab-items__devider">/</div>
-        <div class="tab-items__tab-item">Nike Airmax 270 React</div>
-    </nav> 
-
-    <main class="product-main">   
-      <div class="product">
-        <div class="container product__container">
-          <div class="product__content-part">
-            <div class="product-info">
-              <div class="product-info__image-part">
-                <img src="res/assets/comp.png" alt="" class="product-info__main-image" id="main-image">
-                <div class="product-info__tab-image-block">
-                  <img src="res/assets/comp.png" alt="" class="tab-image product-info__tab-image">
-                  <img src="res/assets/comp.png" alt="" class="tab-image product-info__tab-image">
-                  <img src="res/assets/comp.png" alt="" class="tab-image product-info__tab-image">
-                  <img src="res/assets/comp.png" alt="" class="tab-image product-info__tab-image">
+                  </span>
+                  <div class="dropdown-content">
+                    <p>8gb</p>
+                    <p>16gb</p>
+                    <p>32gb</p>
+                  </div>
                 </div>
               </div>
-
-              <div class="product-info__text-part">
-                <h2 class="product-info__name">PotatoCompucter 3000</h2>
-                  <div class="product-info__rating-block block">
-                    <div class="rating product-info__rating">
-                      <svg class="rating__star rating__star--active">
-                        <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                      </svg>
-                      <svg class="rating__star rating__star--active">
-                        <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                      </svg>
-                      <svg class="rating__star rating__star--active">
-                        <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                      </svg>
-                      <svg class="rating__star rating__star--active">
-                        <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                      </svg>
-                      <svg class="rating__star">
-                        <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                      </svg>
-                    </div>
-                    <span class="product-info__reviews-count">
-                      <span class="reviews-counter">0</span> reviews
-                    </span>
-                    <!-- /.product-info__reviews -->
-                    <a href="#" class="product-info__submit-review">Submit review</a>
-                  </div>
-                  <div class="price-block product-info__price-block block">
-                    <span class="price-block__new-price ">$299.43</span>
-                    <span class="price-block__old-price">$534.33</span>
-                    <span class="price-block__offer-price">24% Off</span>
-                  </div>
-                  <div class="product-info__text-block block">
-                    <div class="product-info__text">
-                      <span>Avaibility:</span>
-                      <span class="product-info__text--param">In stock</span>
-                      <span>Category:</span>
-                      <span class="product-info__text--param">Laptops</span>
-                      <span>Free shipping</span>
-                    </div>
-                  </div>
-                  <div class="product-info__params-block block">
-                    <span class="product-info__param-text">Select Color: </span>
-                    <div class="product-info__colors">
-                      <button class="product-info__color-item" style="background-color: blue; outline-color: rgba(0, 0, 255, 0.5);"></button>
-                      <button class="product-info__color-item" style="background-color: yellow; outline-color: rgba(255, 255, 0, 0.5);"></button>
-                      <button class="product-info__color-item" style="background-color: black; outline-color: rgba(0, 0, 0, 0.5);"></button>
-                      <button class="product-info__color-item" style="background-color: red; outline-color: rgba(255, 0, 0, 0.5);"></button>
-                    </div>
-                    <span class="product-info__param-text">Size: </span>
-                    <div class="product-info__size dropdown">
-                      <span>16gb
-                        <img src="res/assets/arrow down.svg" alt="">
-                      </span>
-                      <div class="dropdown-content">
-                        <p>8gb</p>
-                        <p>16gb</p>
-                        <p>32gb</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-info__add-to-cart-block block">
-                    <div class="counter product-info__counter">
-                      <button class="counter__btn">-</button>
-                      <span>2</span>
-                      <button class="counter__btn">+</button>
-                    </div>
-                    <button class="product-info__add-to-cart-btn button">
-                      <svg class="button__icon">
-                        <use xlink:href="res/assets/product-sprite-collection.svg#cart"></use>
-                      </svg>
-                      <span>Add To Cart</span>
-                    </button>
-                    <button class="product-info__like-btn button">
-                      <svg class="button__icon">
-                        <use xlink:href="res/assets/product-sprite-collection.svg#heart"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="product-info__share-block block">
-                    <a href="https://www.facebook.com/" class="button product-info__share-link product-info__share-link--fb">
-                      <svg class="button__icon">
-                        <use xlink:href="res/assets/socials.svg#facebook"></use>
-                      </svg>
-                      <span>Share on Facebook</span>
-                    </a>
-                    <a href="https://www.twitter.com/" class="button product-info__share-link product-info__share-link--tw">
-                      <svg class="button__icon">
-                        <use xlink:href="res/assets/socials.svg#twitter"></use>
-                      </svg>
-                      <span>Share on Twitter</span>
-                    </a>
-                  </div>
+              <div class="product-info__add-to-cart-block block">
+                <div class="counter product-info__counter">
+                  <button class="counter__btn">-</button>
+                  <span>2</span>
+                  <button class="counter__btn">+</button>
+                </div>
+                <button class="product-info__add-to-cart-btn button">
+                  <svg class="button__icon">
+                    <use xlink:href="res/assets/product-sprite-collection.svg#cart"></use>
+                  </svg>
+                  <span>Add To Cart</span>
+                </button>
+                <button class="product-info__like-btn button">
+                  <svg class="button__icon">
+                    <use xlink:href="res/assets/product-sprite-collection.svg#heart"></use>
+                  </svg>
+                </button>
               </div>
-            </div>
-            
-            <div class="product-description">
-              <div class="product-description__tabs-block">
-                <div class="product-description__tab product-description__tab--active">Product Information</div>
-                <div class="product-description__tab">Reviews <span class="reviews-counter">0</span> </div>
-                <div class="product-description__tab">Tab 228</div>
-              </div>
-              <div class="product-description__content-block"> <!--просто обертка для удобства. контент для табов внутри -->
-                <div class="product-description__content product-description__content--active">
-                  <p>air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.</p>
-                  <p>air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.</p>
-                  <p>air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.</p>
-                </div>
-                <div class="product-description__content">
-                  <p>air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.</p>
-                  <p>air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.</p>
-                  <p>air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.</p>
-                </div>
-                <div class="product-description__content">
-                  <p>air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.</p>
-                  <p>air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.</p>
-                  <p>air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.</p>
-                </div>
+              <div class="product-info__share-block block">
+                <a href="https://www.facebook.com/"
+                  class="button product-info__share-link product-info__share-link--fb">
+                  <svg class="button__icon">
+                    <use xlink:href="res/assets/socials.svg#facebook"></use>
+                  </svg>
+                  <span>Share on Facebook</span>
+                </a>
+                <a href="https://www.twitter.com/" class="button product-info__share-link product-info__share-link--tw">
+                  <svg class="button__icon">
+                    <use xlink:href="res/assets/socials.svg#twitter"></use>
+                  </svg>
+                  <span>Share on Twitter</span>
+                </a>
               </div>
             </div>
           </div>
 
-          <aside class="product__aside-part">
-            <h3 class="product__aside-title">BEST SELLER</h3>
-            <!-- Это один слайд. его нужно засунуть в слайдер -->
-            <a href="#" class="card product__aside-card">
-              <img class="card__img" src="res/assets/comp.png" alt="">
-              <div class="card__info-block">
-                <div class="rating card__rating">
-                  <svg class="rating__star rating__star--active">
-                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                  </svg>
-                  <svg class="rating__star rating__star--active">
-                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                  </svg>
-                  <svg class="rating__star rating__star--active">
-                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                  </svg>
-                  <svg class="rating__star rating__star--active">
-                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                  </svg>
-                  <svg class="rating__star">
-                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                  </svg>
-                </div>
-                <div class="card__price-block block">
-                  <span class="card__new-price">$499</span>
-                  <span class="card__old-price">$599</span>
-                </div>
-              </div>
-            </a>
-
-            <div class="product__aside-dots-block">
-              <span class="product__aside-dot"></span>
-              <span class="product__aside-dot product__aside-dot--active"></span>
-              <span class="product__aside-dot"></span>
-              <span class="product__aside-dot"></span>
+          <div class="product-description">
+            <div class="product-description__tabs-block">
+              <div class="product-description__tab product-description__tab--active">Product Information</div>
+              <div class="product-description__tab">Reviews <span class="reviews-counter">0</span> </div>
+              <div class="product-description__tab">Tab 228</div>
             </div>
-          </aside>
+            <div class="product-description__content-block">
+              <!--просто обертка для удобства. контент для табов внутри -->
+              <div class="product-description__content product-description__content--active">
+                <p>air max are always very comfortable fit, clean and just perfect in every way. just the box was too
+                  small and scrunched the sneakers up a little bit, not sure if the box was always this small but the
+                  90s are and will always be one of my favorites.</p>
+                <p>air max are always very comfortable fit, clean and just perfect in every way. just the box was too
+                  small and scrunched the sneakers up a little bit, not sure if the box was always this small but the
+                  90s are and will always be one of my favorites.</p>
+                <p>air max are always very comfortable fit, clean and just perfect in every way. just the box was too
+                  small and scrunched the sneakers up a little bit, not sure if the box was always this small but the
+                  90s are and will always be one of my favorites.</p>
+              </div>
+              <div class="product-description__content">
+                <p>air max are always very comfortable fit, clean and just perfect in every way. just the box was too
+                  small and scrunched the sneakers up a little bit, not sure if the box was always this small but the
+                  90s are and will always be one of my favorites.</p>
+                <p>air max are always very comfortable fit, clean and just perfect in every way. just the box was too
+                  small and scrunched the sneakers up a little bit, not sure if the box was always this small but the
+                  90s are and will always be one of my favorites.</p>
+                <p>air max are always very comfortable fit, clean and just perfect in every way. just the box was too
+                  small and scrunched the sneakers up a little bit, not sure if the box was always this small but the
+                  90s are and will always be one of my favorites.</p>
+              </div>
+              <div class="product-description__content">
+                <p>air max are always very comfortable fit, clean and just perfect in every way. just the box was too
+                  small and scrunched the sneakers up a little bit, not sure if the box was always this small but the
+                  90s are and will always be one of my favorites.</p>
+                <p>air max are always very comfortable fit, clean and just perfect in every way. just the box was too
+                  small and scrunched the sneakers up a little bit, not sure if the box was always this small but the
+                  90s are and will always be one of my favorites.</p>
+                <p>air max are always very comfortable fit, clean and just perfect in every way. just the box was too
+                  small and scrunched the sneakers up a little bit, not sure if the box was always this small but the
+                  90s are and will always be one of my favorites.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- /.container product__container -->
+
+        <aside class="product__aside-part">
+          <h3 class="product__aside-title">BEST SELLER</h3>
+          <!-- Это один слайд. его нужно засунуть в слайдер -->
+          <a href="#" class="card product__aside-card">
+            <img class="card__img" src="res/assets/comp.png" alt="">
+            <div class="card__info-block">
+              <div class="rating card__rating">
+                <svg class="rating__star rating__star--active">
+                  <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                </svg>
+                <svg class="rating__star rating__star--active">
+                  <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                </svg>
+                <svg class="rating__star rating__star--active">
+                  <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                </svg>
+                <svg class="rating__star rating__star--active">
+                  <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                </svg>
+                <svg class="rating__star">
+                  <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                </svg>
+              </div>
+              <div class="card__price-block block">
+                <span class="card__new-price">$499</span>
+                <span class="card__old-price">$599</span>
+              </div>
+            </div>
+          </a>
+
+          <div class="product__aside-dots-block">
+            <span class="product__aside-dot"></span>
+            <span class="product__aside-dot product__aside-dot--active"></span>
+            <span class="product__aside-dot"></span>
+            <span class="product__aside-dot"></span>
+          </div>
+        </aside>
       </div>
-      <!-- /.product -->
-      <div class="related">
-        <div class="container related__container">
-          <h3 class="related__title">RELATED PRODUCTS</h3>
-          <div class="related__content">
-            <a href="#" class="card related__card">
-              <img class="card__img" src="res/assets/comp.png" alt="">
-              <div class="card__info-block">
-                <div class="card__name">PotatoCompucter</div>
-                <div class="rating card__rating">
-                  <svg class="rating__star rating__star--active">
-                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                  </svg>
-                  <svg class="rating__star rating__star--active">
-                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                  </svg>
-                  <svg class="rating__star rating__star--active">
-                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                  </svg>
-                  <svg class="rating__star rating__star--active">
-                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                  </svg>
-                  <svg class="rating__star">
-                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                  </svg>
-                </div>
-                <div class="price-block card__price-block block">
-                  <span class="price-block__new-price">$299.43</span>
-                  <span class="price-block__old-price">$534.33</span>
-                  <span class="price-block__offer-price">24% Off</span>
-                </div>
+      <!-- /.container product__container -->
+    </div>
+    <!-- /.product -->
+    <div class="related">
+      <div class="container related__container">
+        <h3 class="related__title">RELATED PRODUCTS</h3>
+        <div class="related__content">
+          <a href="#" class="card related__card">
+            <img class="card__img" src="res/assets/comp.png" alt="">
+            <div class="card__info-block">
+              <div class="card__name">PotatoCompucter</div>
+              <div class="rating card__rating">
+                <svg class="rating__star rating__star--active">
+                  <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                </svg>
+                <svg class="rating__star rating__star--active">
+                  <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                </svg>
+                <svg class="rating__star rating__star--active">
+                  <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                </svg>
+                <svg class="rating__star rating__star--active">
+                  <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                </svg>
+                <svg class="rating__star">
+                  <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                </svg>
               </div>
-            </a>
-            <a href="#" class="card related__card">
-              <img class="card__img" src="res/assets/comp.png" alt="">
-              <div class="card__info-block">
-                <div class="card__name">PotatoCompucter</div>
-                <div class="rating card__rating">
-                  <svg class="rating__star rating__star--active">
-                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                  </svg>
-                  <svg class="rating__star rating__star--active">
-                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                  </svg>
-                  <svg class="rating__star rating__star--active">
-                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                  </svg>
-                  <svg class="rating__star rating__star--active">
-                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                  </svg>
-                  <svg class="rating__star">
-                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                  </svg>
-                </div>
-                <div class="price-block card__price-block block">
-                  <span class="price-block__new-price">$299.43</span>
-                  <span class="price-block__old-price">$534.33</span>
-                  <span class="price-block__offer-price">24% Off</span>
-                </div>
+              <div class="price-block card__price-block block">
+                <span class="price-block__new-price">$299.43</span>
+                <span class="price-block__old-price">$534.33</span>
+                <span class="price-block__offer-price">24% Off</span>
               </div>
-            </a>
-            <a href="#" class="card related__card">
-              <img class="card__img" src="res/assets/comp.png" alt="">
-              <div class="card__info-block">
-                <div class="card__name">PotatoCompucter</div>
-                <div class="rating card__rating">
-                  <svg class="rating__star rating__star--active">
-                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                  </svg>
-                  <svg class="rating__star rating__star--active">
-                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                  </svg>
-                  <svg class="rating__star rating__star--active">
-                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                  </svg>
-                  <svg class="rating__star rating__star--active">
-                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                  </svg>
-                  <svg class="rating__star">
-                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                  </svg>
-                </div>
-                <div class="price-block card__price-block block">
-                  <span class="price-block__new-price">$299.43</span>
-                  <span class="price-block__old-price">$534.33</span>
-                  <span class="price-block__offer-price">24% Off</span>
-                </div>
+            </div>
+          </a>
+          <a href="#" class="card related__card">
+            <img class="card__img" src="res/assets/comp.png" alt="">
+            <div class="card__info-block">
+              <div class="card__name">PotatoCompucter</div>
+              <div class="rating card__rating">
+                <svg class="rating__star rating__star--active">
+                  <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                </svg>
+                <svg class="rating__star rating__star--active">
+                  <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                </svg>
+                <svg class="rating__star rating__star--active">
+                  <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                </svg>
+                <svg class="rating__star rating__star--active">
+                  <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                </svg>
+                <svg class="rating__star">
+                  <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                </svg>
               </div>
-            </a>
-            <a href="#" class="card related__card">
-              <img class="card__img" src="res/assets/comp.png" alt="">
-              <div class="card__info-block">
-                <div class="card__name">PotatoCompucter</div>
-                <div class="rating card__rating">
-                  <svg class="rating__star rating__star--active">
-                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                  </svg>
-                  <svg class="rating__star rating__star--active">
-                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                  </svg>
-                  <svg class="rating__star rating__star--active">
-                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                  </svg>
-                  <svg class="rating__star rating__star--active">
-                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                  </svg>
-                  <svg class="rating__star">
-                    <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
-                  </svg>
-                </div>
-                <div class="price-block card__price-block block">
-                  <span class="price-block__new-price">$299.43</span>
-                  <span class="price-block__old-price">$534.33</span>
-                  <span class="price-block__offer-price">24% Off</span>
-                </div>
+              <div class="price-block card__price-block block">
+                <span class="price-block__new-price">$299.43</span>
+                <span class="price-block__old-price">$534.33</span>
+                <span class="price-block__offer-price">24% Off</span>
               </div>
-            </a>
-          </div>
+            </div>
+          </a>
+          <a href="#" class="card related__card">
+            <img class="card__img" src="res/assets/comp.png" alt="">
+            <div class="card__info-block">
+              <div class="card__name">PotatoCompucter</div>
+              <div class="rating card__rating">
+                <svg class="rating__star rating__star--active">
+                  <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                </svg>
+                <svg class="rating__star rating__star--active">
+                  <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                </svg>
+                <svg class="rating__star rating__star--active">
+                  <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                </svg>
+                <svg class="rating__star rating__star--active">
+                  <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                </svg>
+                <svg class="rating__star">
+                  <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                </svg>
+              </div>
+              <div class="price-block card__price-block block">
+                <span class="price-block__new-price">$299.43</span>
+                <span class="price-block__old-price">$534.33</span>
+                <span class="price-block__offer-price">24% Off</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card related__card">
+            <img class="card__img" src="res/assets/comp.png" alt="">
+            <div class="card__info-block">
+              <div class="card__name">PotatoCompucter</div>
+              <div class="rating card__rating">
+                <svg class="rating__star rating__star--active">
+                  <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                </svg>
+                <svg class="rating__star rating__star--active">
+                  <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                </svg>
+                <svg class="rating__star rating__star--active">
+                  <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                </svg>
+                <svg class="rating__star rating__star--active">
+                  <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                </svg>
+                <svg class="rating__star">
+                  <use xlink:href="res/assets/product-sprite-collection.svg#star"></use>
+                </svg>
+              </div>
+              <div class="price-block card__price-block block">
+                <span class="price-block__new-price">$299.43</span>
+                <span class="price-block__old-price">$534.33</span>
+                <span class="price-block__offer-price">24% Off</span>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
-    </main>
-    
-    <footer>
-      <nav class="footer__footer-row">
-          <div class="footer__small-data">
-              <div class="footer__small-data-logo">
-                  Modevice
-              </div>
-              <div class="footer__small-data-description">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.Since the 1500s, when an unknown printer.                </div>
-          </div>
-          <div class="footer__small-data">
-              <div class="footer__small-data-logo">
-                  Follow Us
-              </div>
-              <div class="footer__small-data-description">
-                  Since the 1500s, when an unknown printer took a galley of type and scrambled.            
-              </div>
-              <div class="footer__small-data-description">
-                  <img src="res/assets/facebook.svg" alt="">
-                  <img src="res/assets/twitter.svg" alt="">
-              </div>
-          </div>
-          <div class="footer__small-data">
-              <div class="footer__small-data-logo">
-                  Contact Us
-              </div>
-              <div class="footer__small-data-description">
-                  E-Comm , 4578 Marmora Road, Glasgow D04 89GR                
-              </div>
-              
-          </div>
-      </nav>
-      <nav class="footer__footer-row">
-          <div class="footer__small-data">
-              <div class="footer__small-data-logo">
-                  Infomation  
-              </div>
-              <div class="footer__small-data-description">
-                  <ul>
-                      <li><a href="">Home</a></li>
-                      <li><a href="">Laptops</a></li>
-                      <li><a href="">PC</a></li>
-                      <li><a href="">Contact</a></li>
-                      
-                  </ul>
-              </div>
-          </div>
-          <div class="footer__small-data">
-              <div class="footer__small-data-logo">
-                  Service  
-              </div>
-              <div class="footer__small-data-description">
-                  <ul>
-                      <li><a href="">Home</a></li>
-                      <li><a href="">Laptops</a></li>
-                      <li><a href="">PC</a></li>
-                      <li><a href="">Contact</a></li>
-                      
-                  </ul>
-              </div>
-          </div>
-          <div class="footer__small-data">
-              <div class="footer__small-data-logo">
-                  My Account
-              </div>
-              <div class="footer__small-data-description">
-                  <ul>
-                      <li><a href="">Home</a></li>
-                      <li><a href="">Laptops</a></li>
-                      <li><a href="">PC</a></li>
-                      <li><a href="">Contact</a></li>
-                      
-                  </ul>
-              </div>
-          </div>
-          <div class="footer__small-data">
-              <div class="footer__small-data-logo">
-                  Our Offers
-              </div>
-              <div class="footer__small-data-description">
-                  <ul>
-                      <li><a href="">Home</a></li>
-                      <li><a href="">Laptops</a></li>
-                      <li><a href="">PC</a></li>
-                      <li><a href="">Contact</a></li>
-                      
-                  </ul>
-              </div>
-          </div>
-          
-      </nav>
-    </footer>
+    </div>
+  </main>
 
-    <script src="res/js/main.js"></script>
+  <footer>
+    <nav class="footer__footer-row">
+      <div class="footer__small-data">
+        <div class="footer__small-data-logo">
+          Navigation
+        </div>
+        <div class="footer__small-data-description">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Laptops</a></li>
+            <li><a href="">PC</a></li>
+            <li><a href="">Contact</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="footer__small-data">
+        <div class="footer__small-data-logo">
+          Modevice
+        </div>
+        <div class="footer__small-data-description">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever.Since the 1500s, when an unknown printer. </div>
+      </div>
+      <div class="footer__small-data">
+        <div class="footer__small-data-logo">
+          Follow Us
+        </div>
+        <div class="footer__small-data-description">
+          Since the 1500s, when an unknown printer took a galley of type and scrambled.
+        </div>
+        <div class="footer__small-data-description">
+          <img src="res/assets/facebook.svg" alt="">
+          <img src="res/assets/twitter.svg" alt="">
+        </div>
+      </div>
+      <div class="footer__small-data">
+        <div class="footer__small-data-logo">
+          Contact Us
+        </div>
+        <div class="footer__small-data-description">
+          E-Comm , 4578 Marmora Road, Glasgow D04 89GR
+        </div>
+
+      </div>
+
+    </nav>
+  </footer>
+
+  <script src="res/js/main.js"></script>
 </body>
+
 </html>
