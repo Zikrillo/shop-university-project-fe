@@ -8,7 +8,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <header class="no-fix">
       <div class="header-small-menu">
         <div class="header-small-menu__currency-lang-corner">
           <div class="header-small-menu__dropdown_lang">
@@ -46,7 +46,7 @@
         </div>
       </nav>
     </header>
-    <nav class="tab-items">
+    <nav class="tab-items no-fix">
       <div class="tab-items__tab-item tab-active">Home</div>
       <div class="tab-items__devider">/</div>
       <div class="tab-items__tab-item">Hot Deal</div>
@@ -54,7 +54,7 @@
       <div class="tab-items__tab-item">Nike Airmax 270 React</div>
     </nav>
     <div class="basket">
-      <div class="basker__container">
+      <div class="basket__container">
         <div class="basket__head">
           <div class="basket__product-text">PRODUCT</div>
           <div class="basket__price">PRICE</div>
@@ -64,21 +64,32 @@
         <div class="basket__products">
           <div class="basket__product">
             <div class="basket__product-img">
+              <form class="form-x" action="">
+                <button class="btn-x"></button>
+              </form>
               <img src="res/assets/comp.png" alt="" />
             </div>
             <div class="basket__product-name">Nike Airmax 270 react</div>
             <div class="basket__product-price">$998</div>
-            <div class="basket__product-value">2</div>
+            <form class="basket__product-value" action="">
+              <button class="basket__calc-btn"></button>
+              <input value="2" class="basket__value-inp" type="text" />
+            </form>
             <div class="basket__product-unit-price">$499</div>
           </div>
           <div class="basket__product">
             <div class="basket__product-img">
+              <form class="form-x" action="">
+                <button class="btn-x"></button>
+              </form>
               <img src="res/assets/comp.png" alt="" />
             </div>
             <div class="basket__product-name">Nike Airmax 270 react</div>
-
             <div class="basket__product-price">$998</div>
-            <div class="basket__product-value">2</div>
+            <form class="basket__product-value" action="">
+              <button class="basket__calc-btn"></button>
+              <input value="2" class="basket__value-inp" type="text" />
+            </form>
             <div class="basket__product-unit-price">$499</div>
           </div>
         </div>
@@ -111,7 +122,9 @@
                 <span class="basket__total-text">total</span>
                 <span class="basket__total-value">$118</span>
               </div>
-              <button class="basket__total-btn">Check out</button>
+              <form class="form-check" action="#">
+                <button class="basket__total-btn">Check out</button>
+              </form>
             </div>
           </div>
         </div>

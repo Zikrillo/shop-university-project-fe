@@ -939,14 +939,13 @@ main {
 
 /* =====FOOTER====== */
 footer {
-  padding: 150px 140px 40px; 
+  padding: 150px 140px 40px;
   margin-top: 70px;
 }
 .footer__footer-row {
   display: flex;
   justify-content: space-between;
 }
-
 
 .footer__small-data {
   max-width: 221px;
@@ -1166,7 +1165,7 @@ footer {
 
 .basket__container {
   max-width: 1256px;
-  margin: 300px auto 0px;
+  margin: 100px auto 0px;
 }
 .basket__head {
   font-weight: 500;
@@ -1247,10 +1246,10 @@ footer {
   content: "";
   background: url("../assets/minus.svg") no-repeat;
   width: 9px;
-  height: 2px;
+  height: 8px;
   position: absolute;
   left: -30px;
-  bottom: 4px;
+  bottom: -2px;
 }
 .basket__calc-btn::after {
   content: "";
@@ -1402,19 +1401,6 @@ footer {
   line-height: 27px;
   color: #ffffff;
 }
-/* .no-fix {
+.no-fix {
   position: static;
-  width: 100%;
 }
-.no-fix2 {
-  position: static;
-  width: 100vw;
-  margin: 0;
-  margin-left: -150px;
-  margin-top: 45px;
-}
-.no-fix--container {
-  max-width: 1256px;
-  margin: 0px auto;
-}
- */
