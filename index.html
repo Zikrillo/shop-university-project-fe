@@ -1,433 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="res/css/style.css">
-</head>
+    <link rel="stylesheet" href="res/css/style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="header-small-menu">
-          <div class="header-small-menu__currency-lang-corner">
-            <div class="header-small-menu__dropdown_lang">
-              <div>EN</div>
-              <img src="res/assets/arrow down.svg" alt="" />
-            </div>
-            <div class="header-small-menu__dropdown_currency">
-              <div>USD</div>
-              <img src="res/assets/arrow down.svg" alt="" />
-            </div>
+      <div class="header-small-menu">
+        <div class="header-small-menu__currency-lang-corner">
+          <div class="header-small-menu__dropdown_lang">
+            <div>EN</div>
+            <img src="res/assets/arrow down.svg" alt="" />
           </div>
-          <div class="header-small-menu__profile-corner">
-            <div class="header-small-menu__profile">
-              <img src="res/assets/profile_close_2.svg" alt="" />
-              <div>My profile</div>
-            </div>
-            <div class="header-small-menu_basket">
-              <img src="res/assets/basket.svg" alt="" />
-            </div>
-            <div class="header-small-menu__balance">$0.00</div>
-            <div class="header-small-menu__search">
-              <img src="res/assets/search-icon.svg" alt="" />
-            </div>
+          <div class="header-small-menu__dropdown_currency">
+            <div>USD</div>
+            <img src="res/assets/arrow down.svg" alt="" />
           </div>
         </div>
-        <nav class="header-navigation">
-          <div class="header-navigation__logo">
-            <a href="/"><img src="res/assets/logo.png" alt="" /></a>
+        <div class="header-small-menu__profile-corner">
+          <div class="header-small-menu__profile">
+            <img src="res/assets/profile_close_2.svg" alt="" />
+            <div>My profile</div>
           </div>
-          <div class="header-navigation__items">
-            <div class="header-navigation__item">Home</div>
-            <div class="header-navigation__item">Laptops</div>
-            <div class="header-navigation__item">PC</div>
-            <div class="header-navigation__item">Contact</div>
+          <div class="header-small-menu_basket">
+            <img src="res/assets/basket.svg" alt="" />
           </div>
-        </nav>
-      </header>
+          <div class="header-small-menu__balance">$0.00</div>
+          <div class="header-small-menu__search">
+            <img src="res/assets/search-icon.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <nav class="header-navigation">
+        <div class="header-navigation__logo">
+          <a href="/"><img src="res/assets/logo.png" alt="" /></a>
+        </div>
+        <div class="header-navigation__items">
+          <div class="header-navigation__item">Home</div>
+          <div class="header-navigation__item">Laptops</div>
+          <div class="header-navigation__item">PC</div>
+          <div class="header-navigation__item">Contact</div>
+        </div>
+      </nav>
+    </header>
     <nav class="tab-items">
-        <div class="tab-items__tab-item tab-active">Home</div>
-        <div class="tab-items__devider">/</div>
-        <div class="tab-items__tab-item">Hot Deal</div>
+      <div class="tab-items__tab-item tab-active">Home</div>
+      <div class="tab-items__devider">/</div>
+      <div class="tab-items__tab-item">Hot Deal</div>
     </nav>
     <main>
-        <div class="left-menu">
-            <div class="left-menu__brand-list">
-                <div class="left-menu__brand-list-header">
-                    Hot Deals
-                </div>
-                <div class="left-menu__brand-list-items">
-                    <div class="left-menu__brand-item">
-                        <div class="left-menu__brand-name">Intel</div>
-                        <div class="left-menu__brand-count">5</div>
-                    </div>
-                    <div class="left-menu__brand-item">
-                        <div class="left-menu__brand-name">AMD</div>
-                        <div class="left-menu__brand-count">15</div>
-                    </div>
-                    <div class="left-menu__brand-item">
-                        <div class="left-menu__brand-name">Nvidia</div>
-                        <div class="left-menu__brand-count">15</div>
-                    </div>
-                    <div class="left-menu__brand-item">
-                        <div class="left-menu__brand-name">Asus</div>
-                        <div class="left-menu__brand-count">2</div>
-                    </div>
-                    <div class="left-menu__brand-item">
-                        <div class="left-menu__brand-name">Samsung</div>
-                        <div class="left-menu__brand-count">5</div>
-                    </div>
-                    <div class="left-menu__brand-item">
-                        <div class="left-menu__brand-name">Xiaomi</div>
-                        <div class="left-menu__brand-count">15</div>
-                    </div>
-                    <div class="left-menu__brand-item">
-                        <div class="left-menu__brand-name">Sony</div>
-                        <div class="left-menu__brand-count">6</div>
-                    </div>
-                </div>
+      <div class="left-menu">
+        <div class="left-menu__brand-list">
+          <div class="left-menu__brand-list-header">Hot Deals</div>
+          <div class="left-menu__brand-list-items">
+            <div class="left-menu__brand-item">
+              <div class="left-menu__brand-name">Intel</div>
+              <div class="left-menu__brand-count">5</div>
             </div>
-            <div class="left-menu__ranger">
-                <div class="left-menu__ranger-header">
-                    Prices<br>
-                    Ranger:
-                    $0 - $100
-                </div>
-
-                <div class="left-menu__ranger-controller">
-                    <input type="range" class="controller-left" value="100">
-                    <input type="range" class="controller-right" value="0">
-                    <div class="left-menu__ranger-controller-back"></div>
-                    <div class="left-menu__ranger-controller-border"></div>
-                </div>
+            <div class="left-menu__brand-item">
+              <div class="left-menu__brand-name">AMD</div>
+              <div class="left-menu__brand-count">15</div>
             </div>
+            <div class="left-menu__brand-item">
+              <div class="left-menu__brand-name">Nvidia</div>
+              <div class="left-menu__brand-count">15</div>
+            </div>
+            <div class="left-menu__brand-item">
+              <div class="left-menu__brand-name">Asus</div>
+              <div class="left-menu__brand-count">2</div>
+            </div>
+            <div class="left-menu__brand-item">
+              <div class="left-menu__brand-name">Samsung</div>
+              <div class="left-menu__brand-count">5</div>
+            </div>
+            <div class="left-menu__brand-item">
+              <div class="left-menu__brand-name">Xiaomi</div>
+              <div class="left-menu__brand-count">15</div>
+            </div>
+            <div class="left-menu__brand-item">
+              <div class="left-menu__brand-name">Sony</div>
+              <div class="left-menu__brand-count">6</div>
+            </div>
+          </div>
         </div>
-        <section class="goods-list">
-            <div class="goods-list__item">
-                <div class="goods-list__item-description">
-                    <div class="goods-list__item-header">
-                        ASUS ROG 270 React
-                    </div>
-                    <div class="goods-list__rate">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <span class="goods-list__reveiw">0 reveiws</span>
-                        <span class="goods-list__reveiw_submit">Submit a review</span>
-                    </div>
-                    <div class="devider"></div>
-                    <div class="goods-list__item-price">
-                        $299,43
-                    </div>
-                    <div class="goods-list__item-description-text">
-                        Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique
-                        ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin
-                        vulputate g nisl ut dolor ...
-                    </div>
-                    <div class="goods-list__item-buy">
-                        <button class="goods-list__item-buy-button"><img src="res/assets/cart_2.svg" alt=""> Add to
-                            card</button>
-                        <button class="goods-list__item-to-fav-button"><img src="res/assets/hearts.svg" alt=""></button>
-                    </div>
-                </div>
-                <div class="goods-list__item-image">
-                    <img src="res/assets/comp.png" width="300" alt="">
-                </div>
+        <div class="left-menu__ranger">
+          <div class="left-menu__ranger-header">
+            Prices<br />
+            Ranger: $0 - $100
+          </div>
+
+          <div class="left-menu__ranger-controller">
+            <input type="range" class="controller-left" value="100" />
+            <input type="range" class="controller-right" value="0" />
+            <div class="left-menu__ranger-controller-back"></div>
+            <div class="left-menu__ranger-controller-border"></div>
+          </div>
+        </div>
+      </div>
+      <section class="goods-list">
+        <div class="goods-list__item">
+          <div class="goods-list__item-description">
+            <div class="goods-list__item-header">ASUS ROG 270 React</div>
+            <div class="goods-list__rate">
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <span class="goods-list__reveiw">0 reveiws</span>
+              <span class="goods-list__reveiw_submit">Submit a review</span>
             </div>
             <div class="devider"></div>
-            <div class="goods-list__item">
-                <div class="goods-list__item-description">
-                    <div class="goods-list__item-header">
-                        ASUS ROG 270 React
-                    </div>
-                    <div class="goods-list__rate">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <span class="goods-list__reveiw">0 reveiws</span>
-                        <span class="goods-list__reveiw_submit">Submit a review</span>
-                    </div>
-                    <div class="devider"></div>
-                    <div class="goods-list__item-price">
-                        $299,43
-                    </div>
-                    <div class="goods-list__item-description-text">
-                        Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique
-                        ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin
-                        vulputate g nisl ut dolor ...
-                    </div>
-                    <div class="goods-list__item-buy">
-                        <button class="goods-list__item-buy-button"><img src="res/assets/cart_2.svg" alt=""> Add to
-                            card</button>
-                        <button class="goods-list__item-to-fav-button"><img src="res/assets/hearts.svg" alt=""></button>
-                    </div>
-                </div>
-                <div class="goods-list__item-image">
-                    <img src="res/assets/comp.png" width="300" alt="">
-                </div>
+            <div class="goods-list__item-price">$299,43</div>
+            <div class="goods-list__item-description-text">
+              Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida
+              et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc
+              leifend laorevtr istique et congue. Vivamus adipiscin vulputate g
+              nisl ut dolor ...
+            </div>
+            <div class="goods-list__item-buy">
+              <button class="goods-list__item-buy-button">
+                <img src="res/assets/cart_2.svg" alt="" /> Add to card
+              </button>
+              <button class="goods-list__item-to-fav-button">
+                <img src="res/assets/hearts.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="goods-list__item-image">
+            <img src="res/assets/comp.png" width="300" alt="" />
+          </div>
+        </div>
+        <div class="devider"></div>
+        <div class="goods-list__item">
+          <div class="goods-list__item-description">
+            <div class="goods-list__item-header">ASUS ROG 270 React</div>
+            <div class="goods-list__rate">
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <span class="goods-list__reveiw">0 reveiws</span>
+              <span class="goods-list__reveiw_submit">Submit a review</span>
             </div>
             <div class="devider"></div>
-            <div class="goods-list__item">
-                <div class="goods-list__item-description">
-                    <div class="goods-list__item-header">
-                        ASUS ROG 270 React
-                    </div>
-                    <div class="goods-list__rate">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <span class="goods-list__reveiw">0 reveiws</span>
-                        <span class="goods-list__reveiw_submit">Submit a review</span>
-                    </div>
-                    <div class="devider"></div>
-                    <div class="goods-list__item-price">
-                        $299,43
-                    </div>
-                    <div class="goods-list__item-description-text">
-                        Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique
-                        ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin
-                        vulputate g nisl ut dolor ...
-                    </div>
-                    <div class="goods-list__item-buy">
-                        <button class="goods-list__item-buy-button"><img src="res/assets/cart_2.svg" alt=""> Add to
-                            card</button>
-                        <button class="goods-list__item-to-fav-button"><img src="res/assets/hearts.svg" alt=""></button>
-                    </div>
-                </div>
-                <div class="goods-list__item-image">
-                    <img src="res/assets/comp.png" width="300" alt="">
-                </div>
+            <div class="goods-list__item-price">$299,43</div>
+            <div class="goods-list__item-description-text">
+              Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida
+              et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc
+              leifend laorevtr istique et congue. Vivamus adipiscin vulputate g
+              nisl ut dolor ...
+            </div>
+            <div class="goods-list__item-buy">
+              <button class="goods-list__item-buy-button">
+                <img src="res/assets/cart_2.svg" alt="" /> Add to card
+              </button>
+              <button class="goods-list__item-to-fav-button">
+                <img src="res/assets/hearts.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="goods-list__item-image">
+            <img src="res/assets/comp.png" width="300" alt="" />
+          </div>
+        </div>
+        <div class="devider"></div>
+        <div class="goods-list__item">
+          <div class="goods-list__item-description">
+            <div class="goods-list__item-header">ASUS ROG 270 React</div>
+            <div class="goods-list__rate">
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <span class="goods-list__reveiw">0 reveiws</span>
+              <span class="goods-list__reveiw_submit">Submit a review</span>
             </div>
             <div class="devider"></div>
-            <div class="goods-list__item">
-                <div class="goods-list__item-description">
-                    <div class="goods-list__item-header">
-                        ASUS ROG 270 React
-                    </div>
-                    <div class="goods-list__rate">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <span class="goods-list__reveiw">0 reveiws</span>
-                        <span class="goods-list__reveiw_submit">Submit a review</span>
-                    </div>
-                    <div class="devider"></div>
-                    <div class="goods-list__item-price">
-                        $299,43
-                    </div>
-                    <div class="goods-list__item-description-text">
-                        Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique
-                        ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin
-                        vulputate g nisl ut dolor ...
-                    </div>
-                    <div class="goods-list__item-buy">
-                        <button class="goods-list__item-buy-button"><img src="res/assets/cart_2.svg" alt=""> Add to
-                            card</button>
-                        <button class="goods-list__item-to-fav-button"><img src="res/assets/hearts.svg" alt=""></button>
-                    </div>
-                </div>
-                <div class="goods-list__item-image">
-                    <img src="res/assets/comp.png" width="300" alt="">
-                </div>
+            <div class="goods-list__item-price">$299,43</div>
+            <div class="goods-list__item-description-text">
+              Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida
+              et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc
+              leifend laorevtr istique et congue. Vivamus adipiscin vulputate g
+              nisl ut dolor ...
+            </div>
+            <div class="goods-list__item-buy">
+              <button class="goods-list__item-buy-button">
+                <img src="res/assets/cart_2.svg" alt="" /> Add to card
+              </button>
+              <button class="goods-list__item-to-fav-button">
+                <img src="res/assets/hearts.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="goods-list__item-image">
+            <img src="res/assets/comp.png" width="300" alt="" />
+          </div>
+        </div>
+        <div class="devider"></div>
+        <div class="goods-list__item">
+          <div class="goods-list__item-description">
+            <div class="goods-list__item-header">ASUS ROG 270 React</div>
+            <div class="goods-list__rate">
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <span class="goods-list__reveiw">0 reveiws</span>
+              <span class="goods-list__reveiw_submit">Submit a review</span>
             </div>
             <div class="devider"></div>
-            <div class="goods-list__item">
-                <div class="goods-list__item-description">
-                    <div class="goods-list__item-header">
-                        ASUS ROG 270 React
-                    </div>
-                    <div class="goods-list__rate">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <span class="goods-list__reveiw">0 reveiws</span>
-                        <span class="goods-list__reveiw_submit">Submit a review</span>
-                    </div>
-                    <div class="devider"></div>
-                    <div class="goods-list__item-price">
-                        $299,43
-                    </div>
-                    <div class="goods-list__item-description-text">
-                        Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique
-                        ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin
-                        vulputate g nisl ut dolor ...
-                    </div>
-                    <div class="goods-list__item-buy">
-                        <button class="goods-list__item-buy-button"><img src="res/assets/cart_2.svg" alt=""> Add to
-                            card</button>
-                        <button class="goods-list__item-to-fav-button"><img src="res/assets/hearts.svg" alt=""></button>
-                    </div>
-                </div>
-                <div class="goods-list__item-image">
-                    <img src="res/assets/comp.png" width="300" alt="">
-                </div>
+            <div class="goods-list__item-price">$299,43</div>
+            <div class="goods-list__item-description-text">
+              Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida
+              et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc
+              leifend laorevtr istique et congue. Vivamus adipiscin vulputate g
+              nisl ut dolor ...
+            </div>
+            <div class="goods-list__item-buy">
+              <button class="goods-list__item-buy-button">
+                <img src="res/assets/cart_2.svg" alt="" /> Add to card
+              </button>
+              <button class="goods-list__item-to-fav-button">
+                <img src="res/assets/hearts.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="goods-list__item-image">
+            <img src="res/assets/comp.png" width="300" alt="" />
+          </div>
+        </div>
+        <div class="devider"></div>
+        <div class="goods-list__item">
+          <div class="goods-list__item-description">
+            <div class="goods-list__item-header">ASUS ROG 270 React</div>
+            <div class="goods-list__rate">
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <span class="goods-list__reveiw">0 reveiws</span>
+              <span class="goods-list__reveiw_submit">Submit a review</span>
             </div>
             <div class="devider"></div>
-            <div class="goods-list__item">
-                <div class="goods-list__item-description">
-                    <div class="goods-list__item-header">
-                        ASUS ROG 270 React
-                    </div>
-                    <div class="goods-list__rate">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <span class="goods-list__reveiw">0 reveiws</span>
-                        <span class="goods-list__reveiw_submit">Submit a review</span>
-                    </div>
-                    <div class="devider"></div>
-                    <div class="goods-list__item-price">
-                        $299,43
-                    </div>
-                    <div class="goods-list__item-description-text">
-                        Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique
-                        ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin
-                        vulputate g nisl ut dolor ...
-                    </div>
-                    <div class="goods-list__item-buy">
-                        <button class="goods-list__item-buy-button"><img src="res/assets/cart_2.svg" alt=""> Add to
-                            card</button>
-                        <button class="goods-list__item-to-fav-button"><img src="res/assets/hearts.svg" alt=""></button>
-                    </div>
-                </div>
-                <div class="goods-list__item-image">
-                    <img src="res/assets/comp.png" width="300" alt="">
-                </div>
+            <div class="goods-list__item-price">$299,43</div>
+            <div class="goods-list__item-description-text">
+              Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida
+              et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc
+              leifend laorevtr istique et congue. Vivamus adipiscin vulputate g
+              nisl ut dolor ...
+            </div>
+            <div class="goods-list__item-buy">
+              <button class="goods-list__item-buy-button">
+                <img src="res/assets/cart_2.svg" alt="" /> Add to card
+              </button>
+              <button class="goods-list__item-to-fav-button">
+                <img src="res/assets/hearts.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="goods-list__item-image">
+            <img src="res/assets/comp.png" width="300" alt="" />
+          </div>
+        </div>
+        <div class="devider"></div>
+        <div class="goods-list__item">
+          <div class="goods-list__item-description">
+            <div class="goods-list__item-header">ASUS ROG 270 React</div>
+            <div class="goods-list__rate">
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <span class="goods-list__reveiw">0 reveiws</span>
+              <span class="goods-list__reveiw_submit">Submit a review</span>
             </div>
             <div class="devider"></div>
-            <div class="goods-list__item">
-                <div class="goods-list__item-description">
-                    <div class="goods-list__item-header">
-                        ASUS ROG 270 React
-                    </div>
-                    <div class="goods-list__rate">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <span class="goods-list__reveiw">0 reveiws</span>
-                        <span class="goods-list__reveiw_submit">Submit a review</span>
-                    </div>
-                    <div class="devider"></div>
-                    <div class="goods-list__item-price">
-                        $299,43
-                    </div>
-                    <div class="goods-list__item-description-text">
-                        Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique
-                        ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin
-                        vulputate g nisl ut dolor ...
-                    </div>
-                    <div class="goods-list__item-buy">
-                        <button class="goods-list__item-buy-button"><img src="res/assets/cart_2.svg" alt=""> Add to
-                            card</button>
-                        <button class="goods-list__item-to-fav-button"><img src="res/assets/hearts.svg" alt=""></button>
-                    </div>
-                </div>
-                <div class="goods-list__item-image">
-                    <img src="res/assets/comp.png" width="300" alt="">
-                </div>
+            <div class="goods-list__item-price">$299,43</div>
+            <div class="goods-list__item-description-text">
+              Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida
+              et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc
+              leifend laorevtr istique et congue. Vivamus adipiscin vulputate g
+              nisl ut dolor ...
+            </div>
+            <div class="goods-list__item-buy">
+              <button class="goods-list__item-buy-button">
+                <img src="res/assets/cart_2.svg" alt="" /> Add to card
+              </button>
+              <button class="goods-list__item-to-fav-button">
+                <img src="res/assets/hearts.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="goods-list__item-image">
+            <img src="res/assets/comp.png" width="300" alt="" />
+          </div>
+        </div>
+        <div class="devider"></div>
+        <div class="goods-list__item">
+          <div class="goods-list__item-description">
+            <div class="goods-list__item-header">ASUS ROG 270 React</div>
+            <div class="goods-list__rate">
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <span class="goods-list__reveiw">0 reveiws</span>
+              <span class="goods-list__reveiw_submit">Submit a review</span>
             </div>
             <div class="devider"></div>
-            <div class="goods-list__item">
-                <div class="goods-list__item-description">
-                    <div class="goods-list__item-header">
-                        ASUS ROG 270 React
-                    </div>
-                    <div class="goods-list__rate">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <img src="res/assets/star.svg" alt="">
-                        <span class="goods-list__reveiw">0 reveiws</span>
-                        <span class="goods-list__reveiw_submit">Submit a review</span>
-                    </div>
-                    <div class="devider"></div>
-                    <div class="goods-list__item-price">
-                        $299,43
-                    </div>
-                    <div class="goods-list__item-description-text">
-                        Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique
-                        ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin
-                        vulputate g nisl ut dolor ...
-                    </div>
-                    <div class="goods-list__item-buy">
-                        <button class="goods-list__item-buy-button"><img src="res/assets/cart_2.svg" alt=""> Add to
-                            card</button>
-                        <button class="goods-list__item-to-fav-button"><img src="res/assets/hearts.svg" alt=""></button>
-                    </div>
-                </div>
-                <div class="goods-list__item-image">
-                    <img src="res/assets/comp.png" width="300" alt="">
-                </div>
+            <div class="goods-list__item-price">$299,43</div>
+            <div class="goods-list__item-description-text">
+              Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida
+              et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc
+              leifend laorevtr istique et congue. Vivamus adipiscin vulputate g
+              nisl ut dolor ...
             </div>
-        </section>
+            <div class="goods-list__item-buy">
+              <button class="goods-list__item-buy-button">
+                <img src="res/assets/cart_2.svg" alt="" /> Add to card
+              </button>
+              <button class="goods-list__item-to-fav-button">
+                <img src="res/assets/hearts.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="goods-list__item-image">
+            <img src="res/assets/comp.png" width="300" alt="" />
+          </div>
+        </div>
+        <div class="devider"></div>
+        <div class="goods-list__item">
+          <div class="goods-list__item-description">
+            <div class="goods-list__item-header">ASUS ROG 270 React</div>
+            <div class="goods-list__rate">
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <img src="res/assets/star.svg" alt="" />
+              <span class="goods-list__reveiw">0 reveiws</span>
+              <span class="goods-list__reveiw_submit">Submit a review</span>
+            </div>
+            <div class="devider"></div>
+            <div class="goods-list__item-price">$299,43</div>
+            <div class="goods-list__item-description-text">
+              Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida
+              et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc
+              leifend laorevtr istique et congue. Vivamus adipiscin vulputate g
+              nisl ut dolor ...
+            </div>
+            <div class="goods-list__item-buy">
+              <button class="goods-list__item-buy-button">
+                <img src="res/assets/cart_2.svg" alt="" /> Add to card
+              </button>
+              <button class="goods-list__item-to-fav-button">
+                <img src="res/assets/hearts.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="goods-list__item-image">
+            <img src="res/assets/comp.png" width="300" alt="" />
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <nav class="footer__footer-row">
-            <div class="footer__small-data">
-                <div class="footer__small-data-logo">
-                    Navigation
-                </div>
-                <div class="footer__small-data-description">
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Laptops</a></li>
-                        <li><a href="">PC</a></li>
-                        <li><a href="">Contact</a></li>
-
-                    </ul>
-                </div>
-            </div>
-            <div class="footer__small-data">
-                <div class="footer__small-data-logo">
-                    Modevice
-                </div>
-                <div class="footer__small-data-description">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever.Since the 1500s, when an unknown printer. </div>
-            </div>
-            <div class="footer__small-data">
-                <div class="footer__small-data-logo">
-                    Follow Us
-                </div>
-                <div class="footer__small-data-description">
-                    Since the 1500s, when an unknown printer took a galley of type and scrambled.
-                </div>
-                <div class="footer__small-data-description">
-                    <img src="res/assets/facebook.svg" alt="">
-                    <img src="res/assets/twitter.svg" alt="">
-                </div>
-            </div>
-            <div class="footer__small-data">
-                <div class="footer__small-data-logo">
-                    Contact Us
-                </div>
-                <div class="footer__small-data-description">
-                    E-Comm , 4578 Marmora Road, Glasgow D04 89GR
-                </div>
-
-            </div>
-
-        </nav>
+      <nav class="footer__footer-row">
+        <div class="footer__small-data">
+          <div class="footer__small-data-logo">Navigation</div>
+          <div class="footer__small-data-description">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Laptops</a></li>
+              <li><a href="">PC</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__small-data">
+          <div class="footer__small-data-logo">Modevice</div>
+          <div class="footer__small-data-description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever.Since the 1500s, when an unknown printer.
+          </div>
+        </div>
+        <div class="footer__small-data">
+          <div class="footer__small-data-logo">Follow Us</div>
+          <div class="footer__small-data-description">
+            Since the 1500s, when an unknown printer took a galley of type and
+            scrambled.
+          </div>
+          <div class="footer__small-data-description">
+            <img src="res/assets/facebook.svg" alt="" />
+            <img src="res/assets/twitter.svg" alt="" />
+          </div>
+        </div>
+        <div class="footer__small-data">
+          <div class="footer__small-data-logo">Contact Us</div>
+          <div class="footer__small-data-description">
+            E-Comm , 4578 Marmora Road, Glasgow D04 89GR
+          </div>
+        </div>
+      </nav>
     </footer>
     <script src="res/js/main.js"></script>
-</body>
-
+  </body>
 </html>
