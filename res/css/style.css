@@ -21,6 +21,7 @@ header {
 main {
   margin-top: 200px;
   display: flex;
+  padding-top: 78px;
 }
 .header-small-menu {
   display: flex;
@@ -260,7 +261,6 @@ main {
 .goods-list {
   width: auto;
   max-width: 800px;
-  margin-top: 70px;
   margin-left: 31px;
 }
 .goods-list__item-header {
@@ -1418,3 +1418,132 @@ footer {
   margin: 0px auto;
 }
  */
+ .goods-list__navigation{
+  background: #F6F7F8;
+  display: flex;
+  width: 100%;
+  height: 58px;  
+  border-radius: 5px;
+  margin-bottom: 20px;
+  align-items:center;
+  padding: 0px 20px;
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+ }
+ .goods-list__sort,.goods-list__show{
+  margin-left: 50px;
+  display: flex;
+  align-items:center;
+ }
+ .goods-list__sort select,.goods-list__show select{
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  padding: 6px;
+  border: 1px solid #F1F3F4;
+  background: none;
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+ }
+ .goods-list__sort select::after,.goods-list__show select::after{
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  background-image: url("../assets/arrow down.svg");
+ }
+ .goods-list__sort-selector,.goods-list__show-selector {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+ }
+ .goods-list__sort-selector img,.goods-list__show-selector img{
+  margin-left: 20px;
+ }
+ .goods-list__switcher{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+ }
+ .goods-list__switcher img{
+  margin: 16px;
+  cursor: pointer;
+}
+.goods-list__switcher img:last-child{
+  margin-right: 0px;
+}
+.goods-grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 10px;
+  width: calc(100vw - 500px);
+}
+.goods-grid__item{
+  width: 300px;
+  height: 390px;
+  background-color:#F6F7F8;
+  border: 1px solid #F6F7F8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  border-radius: 5px;
+  padding: 10px;
+}
+.goods-grid__item-price-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goods-grid__item-price {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 180%;
+  letter-spacing: 0.5px;
+  color: #40BFFF;
+  margin-right: 13px;
+}
+.goods-grid__item-price-old {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  text-decoration-line: line-through;
+  color: #9098B1;
+  margin-right: 8px;
+}
+.goods-grid__item-price-discount {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #FB7181;
+}
+.goods-grid__item-header{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #223263;
+}
+.goods-list__rate{
+  display: flex;
+  justify-content: center;
+}
+.goods-grid__item-image img{
+  width: 100%;
+  margin-bottom: 12px;
+}
