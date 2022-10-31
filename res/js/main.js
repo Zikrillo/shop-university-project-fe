@@ -2,6 +2,7 @@ const rangeControllerFirst = document.querySelector(".controller-left");
 const rangeControllerSecond = document.querySelector(".controller-right");
 const leftMenuRangerHeader = document.querySelector(".left-menu__ranger-header");
 const leftMenuRangerControllerBack = document.querySelector(".left-menu__ranger-controller-back");
+const burgerSwitcher = document.querySelector(".header-navigation__burger");
 rangeControllerFirst.addEventListener('input', (e)=>{
     if(rangeControllerFirst.value - rangeControllerSecond.value > 0){
         leftMenuRangerControllerBack.style.width = `${rangeControllerFirst.value - rangeControllerSecond.value}%`;
@@ -163,3 +164,6 @@ listButton.addEventListener('click', ()=>{
     data.innerHTML = '';
     generateList(arrayOfData);
 });
+burgerSwitcher.addEventListener('click', ()=>{
+    document.querySelector('.mobile-header').classList.toggle('active');
+})

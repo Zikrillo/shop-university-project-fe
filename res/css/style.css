@@ -132,7 +132,7 @@ main {
   margin-bottom: 50px;
   position: fixed;
   top: 160px;
-  z-index: 1000;
+  z-index: 2;
 }
 .tab-items__devider {
   margin-right: 8px;
@@ -1545,4 +1545,53 @@ footer {
 .goods-grid__item-image img{
   width: 100%;
   margin-bottom: 12px;
+}
+.mobile-header{
+  position: absolute;
+  width:75vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: white;
+  padding: 50px;
+  z-index: 999999;
+  box-shadow: 10px 0px 20px rgba(131, 131, 131, 0.322);
+  display: none;
+}
+
+.mobile-header .header-small-menu{
+  flex-direction: column;
+}
+.mobile-header .header-small-menu__profile-corner{
+  display: none;
+}
+.mobile-header .header-navigation{
+  flex-direction: column;
+  align-items:flex-start;
+}
+.mobile-header .header-navigation .header-navigation__items{
+  flex-direction: column;
+}
+.mobile-header .header-navigation__item{
+  margin-top: 20px;
+}
+.header-navigation__logo a{
+  display: flex;
+  align-items:center;
+  text-decoration: none;
+  color:#22262a;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+}
+.header-navigation__logo img{
+  height: 30px;
+  margin-right: 5px;
+}
+.header-navigation__burger{
+  display: none;
 }
