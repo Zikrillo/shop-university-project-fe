@@ -260,7 +260,6 @@ main {
 }
 .goods-list {
   width: auto;
-  max-width: 800px;
   margin-left: 31px;
 }
 .goods-list__item-header {
@@ -1633,8 +1632,8 @@ footer {
 }
 .goods-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 75px;
 }
 .goods-grid__item {
   width: 300px;
