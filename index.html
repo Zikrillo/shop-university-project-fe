@@ -14,13 +14,19 @@
     <header>
         <div class="header-small-menu">
             <div class="header-small-menu__currency-lang-corner">
-                <div class="header-small-menu__dropdown_lang">
+                <div class="header-small-menu__dropdown_lang dropdown">
                     <div>EN</div>
+                    <div class="dropdown-content"><p>RU</p><p>UZ</p><p>EN</p></div>
                     <img src="res/assets/arrow down.svg" alt="" />
                 </div>
-                <div class="header-small-menu__dropdown_currency">
-                    <div>USD</div>
+                <div class="header-small-menu__dropdown_currency dropdown">
+                    <div class="dropdown-current">USD</div>
                     <img src="res/assets/arrow down.svg" alt="" />
+                    <div class="dropdown-content">
+                        <p>USD</p>
+                        <p>UZS</p>
+                        <p>RUB</p>
+                    </div>
                 </div>
             </div>
             <div class="header-small-menu__profile-corner">
@@ -29,7 +35,7 @@
                     <div>My profile</div>
                 </div>
                 <div class="header-small-menu_basket">
-                    <img src="res/assets/basket.svg" alt="" />
+                    <a href="/basket.html"><img src="res/assets/basket.svg" alt="" /></a>
                 </div>
                 <div class="header-small-menu__balance">$0.00</div>
                 <div class="header-small-menu__search">
@@ -43,10 +49,46 @@
             </div>
             <div class="header-navigation__items">
                 <div class="header-navigation__item">Home</div>
-                <div class="header-navigation__item">Laptops</div>
+                <div class="header-navigation__item">
+                    Laptops
+                </div>
                 <div class="header-navigation__item">PC</div>
                 <div class="header-navigation__item">Contact</div>
             </div>
+            
+            <div class="header-navigation__content-box">
+                <div class="left-menu__brand-list-items">
+                    <div class="left-menu__brand-item">
+                        <div class="left-menu__brand-name">Intel</div>
+                        <div class="left-menu__brand-count">5</div>
+                    </div>
+                    <div class="left-menu__brand-item">
+                        <div class="left-menu__brand-name">AMD</div>
+                        <div class="left-menu__brand-count">15</div>
+                    </div>
+                    <div class="left-menu__brand-item">
+                        <div class="left-menu__brand-name">Nvidia</div>
+                        <div class="left-menu__brand-count">15</div>
+                    </div>
+                    <div class="left-menu__brand-item">
+                        <div class="left-menu__brand-name">Asus</div>
+                        <div class="left-menu__brand-count">2</div>
+                    </div>
+                    <div class="left-menu__brand-item">
+                        <div class="left-menu__brand-name">Samsung</div>
+                        <div class="left-menu__brand-count">5</div>
+                    </div>
+                    <div class="left-menu__brand-item">
+                        <div class="left-menu__brand-name">Xiaomi</div>
+                        <div class="left-menu__brand-count">15</div>
+                    </div>
+                    <div class="left-menu__brand-item">
+                        <div class="left-menu__brand-name">Sony</div>
+                        <div class="left-menu__brand-count">6</div>
+                    </div>
+                </div>
+            </div>
+
             <div class="header-navigation__burger"><img src="res/assets/list.svg" alt=""></div>
         </nav>
         <div class="mobile-header">
@@ -146,41 +188,7 @@
             </div>
         </aside>
         <section class="goods-list">
-            <nav class="goods-list__navigation">
-                <div class="goods-list__overall">
-                    13 items
-                </div>
-                <div class="goods-list__sort">
-                    <div>Sort By</div>
-                    <div class="goods-list__sort-selector">
-                        <select  name="select1">
-                            <option selected>Name</option>
-                            <option>Price</option>
-                            <option>Reviews</option>
-                        </select>
-                        <img src="res/assets/arrow down.svg" alt="">
-                    </div>
-                </div>
-                <div class="goods-list__show">
-                    <div>Sort By</div>
-                    <div class="goods-list__show-selector">
-                        <select  name="select1">
-                            <option selected>5</option>
-                            <option>6</option>
-                            <option>12</option>
-                        </select>
-                        <img src="res/assets/arrow down.svg" alt="">
-                    </div>
-                </div>
-                <div class="goods-list__switcher">
-                    <div class="goods-list__grid">
-                        <img src="res/assets/grid.svg" alt="">
-                    </div>
-                    <div class="goods-list__list">
-                        <img src="res/assets/list active.png" alt="">
-                    </div>
-                </div>
-            </nav>
+            <nav class="goods-list__navigation"></nav>
             <div class="goods-list__content">
             </div>
         </section>
@@ -234,6 +242,8 @@
         </nav>
     </footer>
     <script src="res/js/main.js"></script>
+    <script src="res/js/header.js"></script>
+    <script src="res/js/range.js"></script>
 </body>
 
 </html>

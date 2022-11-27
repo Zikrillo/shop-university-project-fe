@@ -12,6 +12,8 @@
     }
     main{
         margin-top: 100px;
+        grid-template-columns: 1fr;
+        margin-right: 40px;
     }
     .tab-items{
         top: 88px;
@@ -24,7 +26,8 @@
         display: none;
     }
     .goods-list{
-        width: 100% ;
+        margin-right: 0;
+        padding: 0;
     }
     .goods-list__navigation{
         display: none;
@@ -43,13 +46,16 @@
         width: 100%;
     }
     .active{
-        display: block;
+        transform: translateX(0%);
     }
     .mobile-header .header-navigation__items{
         display: block;
     }
     .mobile-header .header-small-menu{
         display: block;
+    }
+    *{
+        margin: 0;
     }
 
 }
