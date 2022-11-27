@@ -143,6 +143,7 @@ function generateList(arrayOfData, amount){
 }
 function generateGrid(arrayOfData, amount){
     const data = document.querySelector(".goods-list__content");
+    data.classList.add("fade");
      data.innerHTML = '';
      for(let x = 0; x < amount; x++ ){
         let e = arrayOfData[x];
@@ -189,9 +190,10 @@ gridButton.addEventListener('click', ()=>{
     document.querySelector(".goods-list__list img").src = "res/assets/list.svg";   
     const data = document.querySelector(".goods-list__content");
     data.classList.add("goods-grid");
-    data.innerHTML = '';
     const dropdownCurrent = document.querySelector(".goods-list__show-selector >.dropdown-current");
-    generateGrid(arrayOfData,dropdownCurrent.innerText);
+    data.classList.toggle("fade");  
+    setTimeout(()=>generateGrid(arrayOfData,dropdownCurrent.innerText),500);
+    
 });
 listButton.addEventListener('click', ()=>{
     document.querySelector(".goods-list__grid img").src = "res/assets/grid.svg";
@@ -200,7 +202,9 @@ listButton.addEventListener('click', ()=>{
     data.classList.remove("goods-grid");
     data.innerHTML = '';
     const dropdownCurrent = document.querySelector(".goods-list__show-selector >.dropdown-current");
-    generateList(arrayOfData,dropdownCurrent.innerText);
+    data.classList.toggle("fade");
+    setTimeout(()=>generateList(arrayOfData,dropdownCurrent.innerText),500);
+    
 });
 burgerSwitcher.addEventListener('click', ()=>{
     document.querySelector('.mobile-header').classList.toggle('active');

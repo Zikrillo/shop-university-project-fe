@@ -1,0 +1,18 @@
+.fade{
+    animation: faded 1s;
+}
+.fade2{
+    animation: faded 1s;
+}
+
+@keyframes faded {
+    0%{
+        opacity: 100%;
+    }
+    50%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
