@@ -54,7 +54,7 @@ let arrayOfData = [
         link: "./product.html",
         image: "res/assets/comp.png"
     }
-    
+
 ];
 const gridNavigation = document.querySelector(".goods-list__navigation");
 gridNavigation.innerHTML = `
@@ -93,13 +93,13 @@ gridNavigation.innerHTML = `
     </div>
     </div>
 `;
-function generateList(arrayOfData, amount){
+function generateList(arrayOfData, amount) {
 
-   const data = document.querySelector(".goods-list__content");
+    const data = document.querySelector(".goods-list__content");
     data.innerHTML = '';
-    for(let x = 0; x < amount; x++ ){
+    for (let x = 0; x < amount; x++) {
         let e = arrayOfData[x];
-        if(e != undefined){
+        if (e != undefined) {
             let item = `
             <div class="goods-list__item">
             <div class="goods-list__item-description">
@@ -137,18 +137,18 @@ function generateList(arrayOfData, amount){
         <div class="devider"></div>
             `;
             data.innerHTML = data.innerHTML + item;
-        } 
+        }
     };
 
 }
-function generateGrid(arrayOfData, amount){
+function generateGrid(arrayOfData, amount) {
     const data = document.querySelector(".goods-list__content");
     data.classList.add("fade");
-     data.innerHTML = '';
-     for(let x = 0; x < amount; x++ ){
+    data.innerHTML = '';
+    for (let x = 0; x < amount; x++) {
         let e = arrayOfData[x];
-        if(e != undefined){
-        let item = `
+        if (e != undefined) {
+            let item = `
         <div class="goods-grid__item">
                    <div class="goods-grid__item-image">
                        <img src="res/assets/comp.png" alt="">
@@ -177,25 +177,25 @@ function generateGrid(arrayOfData, amount){
                    </div>
                </div>
         `;
-        data.innerHTML = data.innerHTML + item; 
+            data.innerHTML = data.innerHTML + item;
         }
-     }
- }
-generateList(arrayOfData,5);
+    }
+}
+generateList(arrayOfData, 5);
 
 const gridButton = document.querySelector(".goods-list__grid");
 const listButton = document.querySelector(".goods-list__list");
-gridButton.addEventListener('click', ()=>{
+gridButton.addEventListener('click', () => {
     document.querySelector(".goods-list__grid img").src = "res/assets/grid active.svg";
-    document.querySelector(".goods-list__list img").src = "res/assets/list.svg";   
+    document.querySelector(".goods-list__list img").src = "res/assets/list.svg";
     const data = document.querySelector(".goods-list__content");
     data.classList.add("goods-grid");
     const dropdownCurrent = document.querySelector(".goods-list__show-selector >.dropdown-current");
-    data.classList.toggle("fade");  
-    setTimeout(()=>generateGrid(arrayOfData,dropdownCurrent.innerText),500);
-    
+    data.classList.toggle("fade");
+    setTimeout(() => generateGrid(arrayOfData, dropdownCurrent.innerText), 500);
+
 });
-listButton.addEventListener('click', ()=>{
+listButton.addEventListener('click', () => {
     document.querySelector(".goods-list__grid img").src = "res/assets/grid.svg";
     document.querySelector(".goods-list__list img").src = "res/assets/list active.png";
     const data = document.querySelector(".goods-list__content");
@@ -203,24 +203,24 @@ listButton.addEventListener('click', ()=>{
     data.innerHTML = '';
     const dropdownCurrent = document.querySelector(".goods-list__show-selector >.dropdown-current");
     data.classList.toggle("fade");
-    setTimeout(()=>generateList(arrayOfData,dropdownCurrent.innerText),500);
-    
+    setTimeout(() => generateList(arrayOfData, dropdownCurrent.innerText), 500);
+
 });
-burgerSwitcher.addEventListener('click', ()=>{
+burgerSwitcher.addEventListener('click', () => {
     document.querySelector('.mobile-header').classList.toggle('active');
 });
 const dropdownCurrent = document.querySelector(".goods-list__show-selector >.dropdown-current");
 const dropdownElems = document.querySelectorAll(".goods-list__show-selector >.dropdown-content>p");
-dropdownElems.forEach((e)=>{
+dropdownElems.forEach((e) => {
     const data = document.querySelector(".goods-list__content");
-    e.addEventListener('click', ()=>{
+    e.addEventListener('click', () => {
         dropdownCurrent.innerText = e.innerText;
         e.parentElement.style.display = 'none';
         e.parentElement.style = "";
-        if(data.classList.value.includes("goods-grid")){
-            generateGrid(arrayOfData,e.innerText);
-        }else{
-            generateList(arrayOfData,e.innerText);
+        if (data.classList.value.includes("goods-grid")) {
+            generateGrid(arrayOfData, e.innerText);
+        } else {
+            generateList(arrayOfData, e.innerText);
         }
     });
 })
